@@ -462,6 +462,21 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "video_MNkmXP": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -474,6 +489,7 @@
     "image_with_text_jH8jhh",
     "17758828891ce92bc4",
     "image_banner_K4Ncba",
-    "related-products"
+    "related-products",
+    "video_MNkmXP"
   ]
 }
