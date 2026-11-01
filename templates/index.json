@@ -1,493 +1,502 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "image_banner": {
-            "type": "image-banner",
-            "blocks": {
-                "heading": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "&nbsp;Useful Gear for Everyday Life&nbsp;",
-                        "heading_size": "h1"
-                    }
-                },
-                "text_MUVagi": {
-                    "type": "text",
-                    "settings": {
-                        "text": "&nbsp;Simple solutions to make life better.&nbsp;",
-                        "text_style": "body"
-                    }
-                },
-                "button": {
-                    "type": "buttons",
-                    "settings": {
-                        "button_label_1": "Explore Our Gear",
-                        "button_link_1": "shopify:\/\/collections\/all",
-                        "button_style_secondary_1": true,
-                        "button_label_2": "",
-                        "button_link_2": "",
-                        "button_style_secondary_2": false
-                    }
-                }
-            },
-            "block_order": [
-                "heading",
-                "text_MUVagi",
-                "button"
-            ],
-            "settings": {
-                "image": "shopify:\/\/shop_images\/page-home-hero-carry-option002.avif",
-                "image_2": "shopify:\/\/shop_images\/product-roam-main-001.avif",
-                "image_overlay_opacity": 20,
-                "image_height": "large",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": false,
-                "color_scheme": "scheme-4",
-                "stack_images_on_mobile": true,
-                "mobile_content_alignment": "center",
-                "show_text_below": true
-            }
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;Useful Gear for Everyday Life&nbsp;Life",
+            "heading_size": "h1"
+          }
         },
-        "rich_text_BFGakD": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_gFxFrx": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "&nbsp;Designed with Purpose&nbsp;",
-                        "heading_size": "h1"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_gFxFrx"
-            ],
-            "name": "t:sections.rich-text.presets.name",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "scheme-2",
-                "full_width": true,
-                "padding_top": 32,
-                "padding_bottom": 0
-            }
+        "text_MUVagi": {
+          "type": "text",
+          "settings": {
+            "text": "&nbsp;Simple solutions to make life better.&nbsp;",
+            "text_style": "body"
+          }
         },
-        "multicolumn_FKUWTw": {
-            "type": "multicolumn",
-            "blocks": {
-                "column_EPBYEB": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/icon-stable-carry-03.svg",
-                        "title": "",
-                        "text": "<p>Practical Design<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_TGDexV": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/icon-Effortless-Access-02.svg",
-                        "title": "",
-                        "text": "<p>Easy to Use<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_emqNzT": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/icon-lightweight-comfort-02.svg",
-                        "title": "",
-                        "text": "<p>Built to Last<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_hWPMeC": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/icon-organized-flow.svg",
-                        "title": "",
-                        "text": "<p>Thoughtful Details<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                }
-            },
-            "block_order": [
-                "column_EPBYEB",
-                "column_TGDexV",
-                "column_emqNzT",
-                "column_hWPMeC"
-            ],
-            "name": "t:sections.multicolumn.presets.name",
-            "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "third",
-                "image_ratio": "square",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 4,
-                "column_alignment": "center",
-                "background_style": "none",
-                "color_scheme": "scheme-2",
-                "columns_mobile": "2",
-                "swipe_on_mobile": false,
-                "padding_top": 12,
-                "padding_bottom": 32
-            }
-        },
-        "rich_text_9AD6f4": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_4ckMqX": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "The Flow Sling",
-                        "heading_size": "h1"
-                    }
-                },
-                "text_R7ntXz": {
-                    "type": "text",
-                    "disabled": true,
-                    "settings": {
-                        "text": "<p>Share information about your brand with your customers. about your brand<\/p>"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_4ckMqX",
-                "text_R7ntXz"
-            ],
-            "name": "t:sections.rich-text.presets.name",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "scheme-1",
-                "full_width": true,
-                "padding_top": 52,
-                "padding_bottom": 20
-            }
-        },
-        "image_with_text_K3mByy": {
-            "type": "image-with-text",
-            "blocks": {
-                "heading_PmEpa4": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "Carry Better, Every Day",
-                        "heading_size": "h2"
-                    }
-                },
-                "text_MM46QY": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>Minimal Design<br\/>Comfortable Carry<br\/>Easy Access<\/p>",
-                        "text_style": "body"
-                    }
-                },
-                "button_aHhJrK": {
-                    "type": "button",
-                    "settings": {
-                        "button_label": "Explore Flow Sling",
-                        "button_link": "shopify:\/\/products\/flow-sling",
-                        "button_style_secondary": true
-                    }
-                }
-            },
-            "block_order": [
-                "heading_PmEpa4",
-                "text_MM46QY",
-                "button_aHhJrK"
-            ],
-            "name": "t:sections.image-with-text.presets.name",
-            "settings": {
-                "image": "shopify:\/\/shop_images\/page-home-coreproduct-003.avif",
-                "height": "adapt",
-                "desktop_image_width": "large",
-                "layout": "text_first",
-                "image_behavior": "none",
-                "content_layout": "no-overlap",
-                "desktop_content_position": "middle",
-                "desktop_content_alignment": "center",
-                "mobile_content_alignment": "center",
-                "section_color_scheme": "scheme-1",
-                "color_scheme": "scheme-2",
-                "padding_top": 0,
-                "padding_bottom": 60
-            }
-        },
-        "rich_text_hY6BNX": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_7RMTpy": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "&nbsp;Explore Our Gear&nbsp;",
-                        "heading_size": "h1"
-                    }
-                },
-                "text_ixnDCA": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p>Start with our everyday carry collection.<\/p>"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_7RMTpy",
-                "text_ixnDCA"
-            ],
-            "name": "t:sections.rich-text.presets.name",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "scheme-2",
-                "full_width": true,
-                "padding_top": 52,
-                "padding_bottom": 12
-            }
-        },
-        "featured_collection_T8Yfrp": {
-            "type": "featured-collection",
-            "name": "t:sections.featured-collection.presets.name",
-            "settings": {
-                "collection": "sling-bags",
-                "products_to_show": 3,
-                "title": "",
-                "heading_size": "h1",
-                "description": "",
-                "show_description": false,
-                "description_style": "body",
-                "columns_desktop": 3,
-                "enable_desktop_slider": false,
-                "full_width": false,
-                "show_view_all": true,
-                "view_all_style": "solid",
-                "color_scheme": "scheme-2",
-                "image_ratio": "adapt",
-                "image_shape": "default",
-                "show_secondary_image": false,
-                "show_vendor": false,
-                "show_rating": false,
-                "quick_add": "none",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
-                "padding_top": 12,
-                "padding_bottom": 36
-            }
-        },
-        "rich_text_aaTpm6": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_gAGh76": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "&nbsp;Made for Real Life&nbsp;",
-                        "heading_size": "h1"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_gAGh76"
-            ],
-            "name": "t:sections.rich-text.presets.name",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "scheme-1",
-                "full_width": true,
-                "padding_top": 80,
-                "padding_bottom": 12
-            }
-        },
-        "multicolumn_AWjVpF": {
-            "type": "multicolumn",
-            "blocks": {
-                "column_eiMLaC": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/page-home-style-002.avif",
-                        "title": "",
-                        "text": "<p>City Commute<\/p>",
-                        "link_label": "",
-                        "link": "shopify:\/\/products\/roam-sling"
-                    }
-                },
-                "column_QdRVcm": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/page-home-through-your-day-04.avif",
-                        "title": "",
-                        "text": "<p>Daily Carry<\/p>",
-                        "link_label": "",
-                        "link": "shopify:\/\/products\/flow-sling"
-                    }
-                }
-            },
-            "block_order": [
-                "column_eiMLaC",
-                "column_QdRVcm"
-            ],
-            "name": "t:sections.multicolumn.presets.name",
-            "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "full",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 2,
-                "column_alignment": "center",
-                "background_style": "none",
-                "color_scheme": "",
-                "columns_mobile": "2",
-                "swipe_on_mobile": false,
-                "padding_top": 20,
-                "padding_bottom": 0
-            }
-        },
-        "multicolumn_CUeGNp": {
-            "type": "multicolumn",
-            "blocks": {
-                "column_gEkfqb": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/page-home-different-scenario-06.avif",
-                        "title": "",
-                        "text": "<p>On The Go<\/p>",
-                        "link_label": "",
-                        "link": "shopify:\/\/products\/flow-sling"
-                    }
-                },
-                "column_4kreQ8": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/page-home-different-scenario05.avif",
-                        "title": "",
-                        "text": "<p>Weekend Walk<\/p>",
-                        "link_label": "",
-                        "link": "shopify:\/\/products\/glide-sling"
-                    }
-                }
-            },
-            "block_order": [
-                "column_gEkfqb",
-                "column_4kreQ8"
-            ],
-            "name": "t:sections.multicolumn.presets.name",
-            "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "full",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 2,
-                "column_alignment": "center",
-                "background_style": "none",
-                "color_scheme": "",
-                "columns_mobile": "2",
-                "swipe_on_mobile": false,
-                "padding_top": 20,
-                "padding_bottom": 80
-            }
-        },
-        "collapsible_content_F8CTfN": {
-            "type": "collapsible-content",
-            "blocks": {
-                "collapsible_row_qfm8p4": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "What is Serivarm?",
-                        "icon": "check_mark",
-                        "row_content": "<p><br\/>Serivarm creates and curates practical gear designed to solve everyday problems and make daily life easier.<br\/><br\/><\/p>",
-                        "page": ""
-                    }
-                },
-                "collapsible_row_VcJJek": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "What kind of products do you offer?",
-                        "icon": "check_mark",
-                        "row_content": "<p><br\/>We offer useful gear for everyday carry, organization, travel, outdoor use, and other everyday needs.<br\/><br\/><\/p>",
-                        "page": ""
-                    }
-                },
-                "collapsible_row_eWYzFd": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "What makes a product useful to Serivarm?",
-                        "icon": "check_mark",
-                        "row_content": "<p><br\/>We look for products with a clear purpose, practical design, and real value in everyday use.<br\/><br\/><\/p>",
-                        "page": ""
-                    }
-                },
-                "collapsible_row_MpwtK7": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "Will you add new types of products?",
-                        "icon": "check_mark",
-                        "row_content": "<p><br\/>Yes. We may expand into new categories as long as the products fit our focus on useful, practical solutions for everyday life.<br\/><br\/><\/p>",
-                        "page": ""
-                    }
-                },
-                "collapsible_row_9KTdkw": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "What is your return policy?",
-                        "icon": "check_mark",
-                        "row_content": "<p><br\/>Returns are accepted within<strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].return.value }}<\/strong> of delivery, provided the item is unused and in its original condition.<br\/><br\/><\/p>",
-                        "page": ""
-                    }
-                }
-            },
-            "block_order": [
-                "collapsible_row_qfm8p4",
-                "collapsible_row_VcJJek",
-                "collapsible_row_eWYzFd",
-                "collapsible_row_MpwtK7",
-                "collapsible_row_9KTdkw"
-            ],
-            "name": "t:sections.collapsible_content.presets.name",
-            "settings": {
-                "caption": "",
-                "heading": "FAQ",
-                "heading_size": "h1",
-                "heading_alignment": "center",
-                "layout": "none",
-                "container_color_scheme": "scheme-2",
-                "color_scheme": "scheme-2",
-                "open_first_collapsible_row": true,
-                "image_ratio": "small",
-                "desktop_layout": "image_second",
-                "padding_top": 80,
-                "padding_bottom": 80
-            }
-        },
-        "1788178047c5c5cba8": {
-            "type": "apps",
-            "settings": {
-                "include_margins": true
-            }
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Explore Our Gear",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
+      },
+      "block_order": [
+        "heading",
+        "text_MUVagi",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/page-home-hero-carry-option002.avif",
+        "image_2": "shopify://shop_images/product-roam-main-001.avif",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
     },
-    "order": [
-        "image_banner",
-        "rich_text_BFGakD",
-        "multicolumn_FKUWTw",
-        "rich_text_9AD6f4",
-        "image_with_text_K3mByy",
-        "rich_text_hY6BNX",
-        "featured_collection_T8Yfrp",
-        "rich_text_aaTpm6",
-        "multicolumn_AWjVpF",
-        "multicolumn_CUeGNp",
-        "collapsible_content_F8CTfN",
-        "1788178047c5c5cba8"
-    ]
+    "rich_text_BFGakD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gFxFrx": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;Designed with Purpose&nbsp;",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gFxFrx"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_FKUWTw": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_EPBYEB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon-stable-carry-03.svg",
+            "title": "",
+            "text": "<p>Practical Design</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TGDexV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon-Effortless-Access-02.svg",
+            "title": "",
+            "text": "<p>Easy to Use</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_emqNzT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon-lightweight-comfort-02.svg",
+            "title": "",
+            "text": "<p>Built to Last</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hWPMeC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon-organized-flow.svg",
+            "title": "",
+            "text": "<p>Thoughtful Details</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_EPBYEB",
+        "column_TGDexV",
+        "column_emqNzT",
+        "column_hWPMeC"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "square",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 32
+      }
+    },
+    "rich_text_9AD6f4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4ckMqX": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Flow Sling",
+            "heading_size": "h1"
+          }
+        },
+        "text_R7ntXz": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. about your brand</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4ckMqX",
+        "text_R7ntXz"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 20
+      }
+    },
+    "image_with_text_K3mByy": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_PmEpa4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Carry Better, Every Day",
+            "heading_size": "h2"
+          }
+        },
+        "text_MM46QY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Minimal Design<br/>Comfortable Carry<br/>Easy Access</p>",
+            "text_style": "body"
+          }
+        },
+        "button_aHhJrK": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Flow Sling",
+            "button_link": "shopify://products/flow-sling",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_PmEpa4",
+        "text_MM46QY",
+        "button_aHhJrK"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/page-home-coreproduct-003.avif",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "rich_text_hY6BNX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7RMTpy": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;Explore Our Gear&nbsp;",
+            "heading_size": "h1"
+          }
+        },
+        "text_ixnDCA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Start with our everyday carry collection.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7RMTpy",
+        "text_ixnDCA"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 12
+      }
+    },
+    "featured_collection_T8Yfrp": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "sling-bags",
+        "products_to_show": 3,
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_aaTpm6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gAGh76": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;Made for Real Life&nbsp;",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gAGh76"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_AWjVpF": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_eiMLaC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/page-home-style-002.avif",
+            "title": "",
+            "text": "<p>City Commute</p>",
+            "link_label": "",
+            "link": "shopify://products/roam-sling"
+          }
+        },
+        "column_QdRVcm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/page-home-through-your-day-04.avif",
+            "title": "",
+            "text": "<p>Daily Carry</p>",
+            "link_label": "",
+            "link": "shopify://products/flow-sling"
+          }
+        }
+      },
+      "block_order": [
+        "column_eiMLaC",
+        "column_QdRVcm"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_CUeGNp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_gEkfqb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/page-home-different-scenario-06.avif",
+            "title": "",
+            "text": "<p>On The Go</p>",
+            "link_label": "",
+            "link": "shopify://products/flow-sling"
+          }
+        },
+        "column_4kreQ8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/page-home-different-scenario05.avif",
+            "title": "",
+            "text": "<p>Weekend Walk</p>",
+            "link_label": "",
+            "link": "shopify://products/glide-sling"
+          }
+        }
+      },
+      "block_order": [
+        "column_gEkfqb",
+        "column_4kreQ8"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 80
+      }
+    },
+    "collapsible_content_F8CTfN": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_qfm8p4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is Serivarm?",
+            "icon": "check_mark",
+            "row_content": "<p><br/>Serivarm creates and curates practical gear designed to solve everyday problems and make daily life easier.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_VcJJek": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What kind of products do you offer?",
+            "icon": "check_mark",
+            "row_content": "<p><br/>We offer useful gear for everyday carry, organization, travel, outdoor use, and other everyday needs.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_eWYzFd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What makes a product useful to Serivarm?",
+            "icon": "check_mark",
+            "row_content": "<p><br/>We look for products with a clear purpose, practical design, and real value in everyday use.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_MpwtK7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will you add new types of products?",
+            "icon": "check_mark",
+            "row_content": "<p><br/>Yes. We may expand into new categories as long as the products fit our focus on useful, practical solutions for everyday life.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9KTdkw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "icon": "check_mark",
+            "row_content": "<p><br/>Returns are accepted within<strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].return.value }}</strong> of delivery, provided the item is unused and in its original condition.<br/><br/></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_qfm8p4",
+        "collapsible_row_VcJJek",
+        "collapsible_row_eWYzFd",
+        "collapsible_row_MpwtK7",
+        "collapsible_row_9KTdkw"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "small",
+        "desktop_layout": "image_second",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "1788178047c5c5cba8": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text_BFGakD",
+    "multicolumn_FKUWTw",
+    "rich_text_9AD6f4",
+    "image_with_text_K3mByy",
+    "rich_text_hY6BNX",
+    "featured_collection_T8Yfrp",
+    "rich_text_aaTpm6",
+    "multicolumn_AWjVpF",
+    "multicolumn_CUeGNp",
+    "collapsible_content_F8CTfN",
+    "1788178047c5c5cba8"
+  ]
 }
