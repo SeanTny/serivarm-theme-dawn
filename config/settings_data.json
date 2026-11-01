@@ -224,7 +224,7 @@
       },
       "2570186021254271643": {
         "type": "shopify://apps/super-video-ugc/blocks/video_ugc_assets/2721aaf8-cc8e-48db-a5ff-caf1f1abfc5c",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     },
