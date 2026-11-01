@@ -405,46 +405,6 @@
         "include_margins": true
       }
     },
-    "image_banner_K4Ncba": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_XT6yxk": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Carry More, Stay Organized",
-            "heading_size": "h2"
-          }
-        },
-        "text_dbnTDC": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "More space, less clutter. Flow Sling keeps your daily essentials close and organized.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_XT6yxk",
-        "text_dbnTDC"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/product-flow-detail-sling-white-crossbody-urban-lifestyle.avif",
-        "image_overlay_opacity": 20,
-        "image_height": "adapt",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-4",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -473,7 +433,6 @@
     "image_with_text_RXhpkj",
     "image_with_text_jH8jhh",
     "17758828891ce92bc4",
-    "image_banner_K4Ncba",
     "related-products"
   ]
 }
