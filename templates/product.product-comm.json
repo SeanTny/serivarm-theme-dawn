@@ -462,12 +462,6 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "1793540351fe416bda": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -480,7 +474,6 @@
     "image_with_text_jH8jhh",
     "17758828891ce92bc4",
     "image_banner_K4Ncba",
-    "related-products",
-    "1793540351fe416bda"
+    "related-products"
   ]
 }
