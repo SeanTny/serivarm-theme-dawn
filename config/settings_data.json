@@ -193,6 +193,11 @@
         "disabled": false,
         "settings": {}
       },
+      "2570186021254271643": {
+        "type": "shopify://apps/super-video-ugc/blocks/video_ugc_assets/2721aaf8-cc8e-48db-a5ff-caf1f1abfc5c",
+        "disabled": false,
+        "settings": {}
+      },
       "2941664643703154558": {
         "type": "shopify://apps/super-video-ugc/blocks/sticky_video_pro/2721aaf8-cc8e-48db-a5ff-caf1f1abfc5c",
         "disabled": false,
@@ -221,11 +226,6 @@
           "bottom": 3,
           "radius": 16
         }
-      },
-      "2570186021254271643": {
-        "type": "shopify://apps/super-video-ugc/blocks/video_ugc_assets/2721aaf8-cc8e-48db-a5ff-caf1f1abfc5c",
-        "disabled": true,
-        "settings": {}
       }
     },
     "color_schemes": {
