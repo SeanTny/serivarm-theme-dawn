@@ -1,0 +1,102 @@
+{
+    "sections": {
+        "banner": {
+            "type": "main-collection-banner",
+            "disabled": true,
+            "settings": {
+                "show_collection_description": true,
+                "show_collection_image": false,
+                "color_scheme": "scheme-2"
+            }
+        },
+        "rich_text_NqEFUe": {
+            "type": "rich-text",
+            "blocks": {
+                "text_zqwHN8": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<h1>{{ collection.title }}<\/h1>"
+                    }
+                }
+            },
+            "block_order": [
+                "text_zqwHN8"
+            ],
+            "name": "t:sections.rich-text.presets.name",
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "scheme-2",
+                "full_width": true,
+                "padding_top": 52,
+                "padding_bottom": 20
+            }
+        },
+        "product-grid": {
+            "type": "main-collection-product-grid",
+            "settings": {
+                "products_per_page": 12,
+                "columns_desktop": 3,
+                "columns_mobile": "2",
+                "color_scheme": "scheme-2",
+                "image_ratio": "square",
+                "image_shape": "default",
+                "show_secondary_image": true,
+                "show_vendor": false,
+                "show_rating": false,
+                "quick_add": "none",
+                "enable_filtering": false,
+                "filter_type": "vertical",
+                "enable_sorting": true,
+                "padding_top": 20,
+                "padding_bottom": 80
+            }
+        },
+        "rich_text_UTQNJL": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_i9iGAV": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "&nbsp;Useful by design. Simple by nature. &nbsp;",
+                        "heading_size": "h1"
+                    }
+                },
+                "heading_gQnX3r": {
+                    "type": "heading",
+                    "disabled": true,
+                    "settings": {
+                        "heading": "Designed for     everyday movement.",
+                        "heading_size": "h1"
+                    }
+                },
+                "text_A4yJxX": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p><\/p><p>We believe good products don't need to be complicated.&nbsp;They should solve a real problem,&nbsp;work as expected, and make everyday life a little easier.<br\/><br\/><\/p>"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_i9iGAV",
+                "heading_gQnX3r",
+                "text_A4yJxX"
+            ],
+            "name": "t:sections.rich-text.presets.name",
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "scheme-1",
+                "full_width": true,
+                "padding_top": 100,
+                "padding_bottom": 100
+            }
+        }
+    },
+    "order": [
+        "banner",
+        "rich_text_NqEFUe",
+        "product-grid",
+        "rich_text_UTQNJL"
+    ]
+}

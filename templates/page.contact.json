@@ -1,0 +1,212 @@
+{
+    "sections": {
+        "main": {
+            "type": "main-page",
+            "disabled": true,
+            "settings": {
+                "padding_top": 36,
+                "padding_bottom": 36
+            }
+        },
+        "image_banner_8pMBed": {
+            "type": "image-banner",
+            "blocks": {
+                "heading_RbkBTj": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "&nbsp;Let's make it right&nbsp;",
+                        "heading_size": "h1"
+                    }
+                },
+                "text_aeCj8k": {
+                    "type": "text",
+                    "settings": {
+                        "text": "Have a question about our products or your order? We're here to help.",
+                        "text_style": "subtitle"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_RbkBTj",
+                "text_aeCj8k"
+            ],
+            "settings": {
+                "image": "shopify:\/\/shop_images\/page-hero-background-soft-white.jpg",
+                "image_overlay_opacity": 10,
+                "image_height": "small",
+                "image_behavior": "none",
+                "desktop_content_position": "middle-center",
+                "desktop_content_alignment": "center",
+                "show_text_box": false,
+                "color_scheme": "scheme-1",
+                "stack_images_on_mobile": false,
+                "mobile_content_alignment": "center",
+                "show_text_below": false
+            }
+        },
+        "rich_text_6PqBEJ": {
+            "type": "rich-text",
+            "blocks": {
+                "text_nNraQd": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<h1>Contact us<\/h1>"
+                    }
+                },
+                "text_QFTjVW": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>Email us directly: support@serivarm.com<br\/>We usually reply within 12 hours. <\/p>"
+                    }
+                }
+            },
+            "block_order": [
+                "text_nNraQd",
+                "text_QFTjVW"
+            ],
+            "name": "t:sections.rich-text.presets.name",
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "",
+                "full_width": true,
+                "padding_top": 100,
+                "padding_bottom": 20
+            }
+        },
+        "form": {
+            "type": "contact-form",
+            "settings": {
+                "heading": "",
+                "heading_size": "h1",
+                "color_scheme": "scheme-1",
+                "padding_top": 0,
+                "padding_bottom": 100
+            }
+        },
+        "multicolumn_XYqRht": {
+            "type": "multicolumn",
+            "blocks": {
+                "column_3keVqw": {
+                    "type": "column",
+                    "settings": {
+                        "title": "Processing Time",
+                        "text": "<p>Orders are typically processed within <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_processing.value }}<\/strong>. <br\/>You’ll receive a confirmation email once your order is shipped.<\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                },
+                "column_JzkBbB": {
+                    "type": "column",
+                    "settings": {
+                        "title": "Transit Time",
+                        "text": "<p>Shipping typically takes <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_transit.value }}<\/strong>.<br\/>Tracking details will be provided after dispatch.<\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                },
+                "column_nDYcNW": {
+                    "type": "column",
+                    "settings": {
+                        "title": "Returns & Refunds",
+                        "text": "<p>We accept returns within <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].return.value }}<\/strong><strong> <\/strong>of delivery for unused items in original condition.<br\/>Please contact us before initiating a return request.<\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                },
+                "column_Ptq49M": {
+                    "type": "column",
+                    "settings": {
+                        "title": "Product Quality",
+                        "text": "<p>Each product is carefully selected and inspected before shipping.<br\/>We focus on practical design, durability, and everyday usability.<\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                },
+                "column_7kiCJ9": {
+                    "type": "column",
+                    "settings": {
+                        "title": "Support Response",
+                        "text": "<p>We typically respond within 12 hours on business days.<br\/>For urgent inquiries, please include your order number.<\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                },
+                "column_ipQqrm": {
+                    "type": "column",
+                    "settings": {
+                        "title": "Order Changes",
+                        "text": "<p>You can request changes or cancellations within 12 hours after placing your order.<br\/>Once the order is processed, it can no longer be modified.<\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                }
+            },
+            "block_order": [
+                "column_3keVqw",
+                "column_JzkBbB",
+                "column_nDYcNW",
+                "column_Ptq49M",
+                "column_7kiCJ9",
+                "column_ipQqrm"
+            ],
+            "name": "t:sections.multicolumn.presets.name",
+            "settings": {
+                "title": "Quick Answers",
+                "heading_size": "h2",
+                "image_width": "full",
+                "image_ratio": "adapt",
+                "button_label": "",
+                "button_link": "",
+                "columns_desktop": 3,
+                "column_alignment": "left",
+                "background_style": "primary",
+                "color_scheme": "scheme-2",
+                "columns_mobile": "1",
+                "swipe_on_mobile": false,
+                "padding_top": 80,
+                "padding_bottom": 0
+            }
+        },
+        "rich_text_RQbbkX": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_AGha8J": {
+                    "type": "heading",
+                    "disabled": true,
+                    "settings": {
+                        "heading": "Business Information",
+                        "heading_size": "h2"
+                    }
+                },
+                "text_LD38tp": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p><strong>Business Information<br\/><\/strong>Serivarm<br\/>No. 99, Qiyuan 2nd Street, Shuangliu District<br\/>Chengdu, Sichuan 610213<br\/>China<br\/>Email: <a href=\"mailto:support@serivarm.com\">support@serivarm.com<\/a><br\/>Phone: +86 188 8145 0185<\/p>"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_AGha8J",
+                "text_LD38tp"
+            ],
+            "name": "t:sections.rich-text.presets.name",
+            "settings": {
+                "desktop_content_position": "right",
+                "content_alignment": "right",
+                "color_scheme": "scheme-2",
+                "full_width": true,
+                "padding_top": 12,
+                "padding_bottom": 12
+            }
+        }
+    },
+    "order": [
+        "main",
+        "image_banner_8pMBed",
+        "rich_text_6PqBEJ",
+        "form",
+        "multicolumn_XYqRht",
+        "rich_text_RQbbkX"
+    ]
+}

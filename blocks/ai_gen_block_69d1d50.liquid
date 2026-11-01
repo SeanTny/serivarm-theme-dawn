@@ -1,0 +1,427 @@
+{% doc %}
+  @prompt
+    写一个展示这种进度的东西：第二块：Delivery Timeline
+    
+    做成卡片。
+    
+    例如
+    
+    Processing
+    
+    1–2 Business Days
+    
+    ↓
+    
+    Shipping
+    
+    5–10 Business Days
+    
+    ↓
+    
+    Delivered
+    
+    Enjoy your Serivarm
+    
+    视觉比文字舒服很多。
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-delivery-timeline-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+  }
+
+  .ai-delivery-timeline-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: {{ block.settings.card_padding }}px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-delivery-timeline-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 {{ block.settings.spacing_between_items }}px 0;
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-delivery-timeline-steps-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .ai-delivery-timeline-step-{{ ai_gen_id }} {
+    display: flex;
+    align-items: flex-start;
+    gap: {{ block.settings.icon_text_gap }}px;
+    position: relative;
+  }
+
+  .ai-delivery-timeline-step-{{ ai_gen_id }}:not(:last-child) {
+    margin-bottom: {{ block.settings.spacing_between_items }}px;
+  }
+
+  .ai-delivery-timeline-icon-wrapper-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    border-radius: 50%;
+    background-color: {{ block.settings.icon_background }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .ai-delivery-timeline-icon-{{ ai_gen_id }} {
+    width: calc({{ block.settings.icon_size }}px * 0.5);
+    height: calc({{ block.settings.icon_size }}px * 0.5);
+    color: {{ block.settings.icon_color }};
+  }
+
+  .ai-delivery-timeline-connector-{{ ai_gen_id }} {
+    position: absolute;
+    left: calc({{ block.settings.icon_size }}px / 2);
+    top: {{ block.settings.icon_size }}px;
+    width: 2px;
+    height: {{ block.settings.spacing_between_items }}px;
+    background-color: {{ block.settings.connector_color }};
+    z-index: 1;
+  }
+
+  .ai-delivery-timeline-content-{{ ai_gen_id }} {
+    flex-grow: 1;
+    padding-top: 4px;
+  }
+
+  .ai-delivery-timeline-step-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.step_title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.step_title_color }};
+    margin: 0 0 4px 0;
+  }
+
+  .ai-delivery-timeline-step-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.step_description_size }}px;
+    color: {{ block.settings.step_description_color }};
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-delivery-timeline-{{ ai_gen_id }} {
+      width: 100%;
+    }
+
+    .ai-delivery-timeline-card-{{ ai_gen_id }} {
+      padding: {{ block.settings.card_padding | times: 0.75 }}px;
+    }
+  }
+{% endstyle %}
+
+<delivery-timeline-{{ ai_gen_id }} class="ai-delivery-timeline-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-delivery-timeline-card-{{ ai_gen_id }}">
+    {% if block.settings.title != blank %}
+      <h3 class="ai-delivery-timeline-title-{{ ai_gen_id }}">{{ block.settings.title }}</h3>
+    {% endif %}
+
+    <div class="ai-delivery-timeline-steps-{{ ai_gen_id }}">
+      <div class="ai-delivery-timeline-step-{{ ai_gen_id }}">
+        <div class="ai-delivery-timeline-icon-wrapper-{{ ai_gen_id }}">
+          <svg class="ai-delivery-timeline-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          <div class="ai-delivery-timeline-connector-{{ ai_gen_id }}"></div>
+        </div>
+        <div class="ai-delivery-timeline-content-{{ ai_gen_id }}">
+          <div class="ai-delivery-timeline-step-title-{{ ai_gen_id }}">{{ block.settings.step_1_title }}</div>
+          <div class="ai-delivery-timeline-step-description-{{ ai_gen_id }}">{{ block.settings.step_1_description }}</div>
+        </div>
+      </div>
+
+      <div class="ai-delivery-timeline-step-{{ ai_gen_id }}">
+        <div class="ai-delivery-timeline-icon-wrapper-{{ ai_gen_id }}">
+          <svg class="ai-delivery-timeline-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+          <div class="ai-delivery-timeline-connector-{{ ai_gen_id }}"></div>
+        </div>
+        <div class="ai-delivery-timeline-content-{{ ai_gen_id }}">
+          <div class="ai-delivery-timeline-step-title-{{ ai_gen_id }}">{{ block.settings.step_2_title }}</div>
+          <div class="ai-delivery-timeline-step-description-{{ ai_gen_id }}">{{ block.settings.step_2_description }}</div>
+        </div>
+      </div>
+
+      <div class="ai-delivery-timeline-step-{{ ai_gen_id }}">
+        <div class="ai-delivery-timeline-icon-wrapper-{{ ai_gen_id }}">
+          <svg class="ai-delivery-timeline-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="ai-delivery-timeline-content-{{ ai_gen_id }}">
+          <div class="ai-delivery-timeline-step-title-{{ ai_gen_id }}">{{ block.settings.step_3_title }}</div>
+          <div class="ai-delivery-timeline-step-description-{{ ai_gen_id }}">{{ block.settings.step_3_description }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</delivery-timeline-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class DeliveryTimeline{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.style.display = 'block';
+      }
+    }
+
+    customElements.define('delivery-timeline-{{ ai_gen_id }}', DeliveryTimeline{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "配送时间线",
+  "settings": [
+    {
+      "type": "header",
+      "content": "标题"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "标题",
+      "default": "配送时间线"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "标题大小",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "标题颜色",
+      "default": "#121212"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "文本对齐",
+      "options": [
+        {
+          "value": "left",
+          "label": "左对齐"
+        },
+        {
+          "value": "center",
+          "label": "居中"
+        },
+        {
+          "value": "right",
+          "label": "右对齐"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "步骤 1"
+    },
+    {
+      "type": "text",
+      "id": "step_1_title",
+      "label": "标题",
+      "default": "处理中"
+    },
+    {
+      "type": "text",
+      "id": "step_1_description",
+      "label": "描述",
+      "default": "1–2 个工作日"
+    },
+    {
+      "type": "header",
+      "content": "步骤 2"
+    },
+    {
+      "type": "text",
+      "id": "step_2_title",
+      "label": "标题",
+      "default": "配送中"
+    },
+    {
+      "type": "text",
+      "id": "step_2_description",
+      "label": "描述",
+      "default": "5–10 个工作日"
+    },
+    {
+      "type": "header",
+      "content": "步骤 3"
+    },
+    {
+      "type": "text",
+      "id": "step_3_title",
+      "label": "标题",
+      "default": "已送达"
+    },
+    {
+      "type": "text",
+      "id": "step_3_description",
+      "label": "描述",
+      "default": "享受您的 Serivarm"
+    },
+    {
+      "type": "header",
+      "content": "卡片样式"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "背景颜色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "圆角",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "内边距",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "桌面宽度",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "图标样式"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "图标大小",
+      "min": 32,
+      "max": 64,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "color",
+      "id": "icon_background",
+      "label": "图标背景",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "图标颜色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "connector_color",
+      "label": "连接线颜色",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "range",
+      "id": "icon_text_gap",
+      "label": "图标与文本间距",
+      "min": 12,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "步骤文本样式"
+    },
+    {
+      "type": "range",
+      "id": "step_title_size",
+      "label": "步骤标题大小",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "step_title_color",
+      "label": "步骤标题颜色",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "step_description_size",
+      "label": "步骤描述大小",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "step_description_color",
+      "label": "步骤描述颜色",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "spacing_between_items",
+      "label": "步骤间距",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    }
+  ],
+  "presets": [
+    {
+      "name": "配送时间线"
+    }
+  ]
+}
+{% endschema %}

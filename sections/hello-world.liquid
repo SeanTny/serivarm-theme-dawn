@@ -1,0 +1,33 @@
+<div>
+  <h1>{{ section.settings.title }}</h1>
+
+  {% if section.settings.show_subtitle %}
+    <p>{{ section.settings.subtitle }}</p>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Hello World",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Hello World"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "This is Serivarm."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_subtitle",
+      "label": "Show subtitle",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,145 @@
+{
+    "sections": {
+        "rich_text_RTYmcU": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_JxeAgr": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Explore Serivarm",
+                        "heading_size": "h1"
+                    }
+                },
+                "text_nVB74B": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>Practical products for everyday life.<\/p>"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_JxeAgr",
+                "text_nVB74B"
+            ],
+            "name": "t:sections.rich-text.presets.name",
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "scheme-2",
+                "full_width": true,
+                "padding_top": 60,
+                "padding_bottom": 0
+            }
+        },
+        "main": {
+            "type": "main-list-collections",
+            "disabled": true,
+            "settings": {
+                "title": "",
+                "sort": "alphabetical",
+                "image_ratio": "square",
+                "columns_desktop": 3,
+                "columns_mobile": "2"
+            }
+        },
+        "collection_list_bKJhLn": {
+            "type": "collection-list",
+            "blocks": {
+                "featured_collection_dqMGcz": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "sling-bags"
+                    }
+                },
+                "featured_collection_L4atKF": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "outdoor"
+                    }
+                },
+                "featured_collection_9REHNz": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "solutions"
+                    }
+                }
+            },
+            "block_order": [
+                "featured_collection_dqMGcz",
+                "featured_collection_L4atKF",
+                "featured_collection_9REHNz"
+            ],
+            "name": "t:sections.collection-list.presets.name",
+            "settings": {
+                "title": "",
+                "heading_size": "h1",
+                "image_ratio": "square",
+                "columns_desktop": 3,
+                "color_scheme": "scheme-2",
+                "show_view_all": false,
+                "columns_mobile": "2",
+                "swipe_on_mobile": false,
+                "padding_top": 36,
+                "padding_bottom": 60
+            }
+        },
+        "rich_text_cm4JK8": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_PR6N9J": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Simple Solutions for Everyday Problems.",
+                        "heading_size": "h2"
+                    }
+                },
+                "heading_3DhxLq": {
+                    "type": "heading",
+                    "disabled": true,
+                    "settings": {
+                        "heading": "Designed for     everyday movement.",
+                        "heading_size": "h1"
+                    }
+                },
+                "text_9w3Lgf": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p><br\/>Minimal sling bags built for<br\/>comfortable carry, easy access,<br\/>and life on the move.<\/p><p><br\/><\/p>"
+                    }
+                },
+                "button_rrUKBY": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "View All Products",
+                        "button_link": "shopify:\/\/collections\/all",
+                        "button_style_secondary": true,
+                        "button_label_2": "",
+                        "button_link_2": "",
+                        "button_style_secondary_2": false
+                    }
+                }
+            },
+            "block_order": [
+                "heading_PR6N9J",
+                "heading_3DhxLq",
+                "text_9w3Lgf",
+                "button_rrUKBY"
+            ],
+            "name": "t:sections.rich-text.presets.name",
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "scheme-1",
+                "full_width": true,
+                "padding_top": 52,
+                "padding_bottom": 52
+            }
+        }
+    },
+    "order": [
+        "rich_text_RTYmcU",
+        "main",
+        "collection_list_bKJhLn",
+        "rich_text_cm4JK8"
+    ]
+}
