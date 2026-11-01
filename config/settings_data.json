@@ -188,13 +188,42 @@
           "widget_type": "review-widget"
         }
       },
-      "4672466289803156472": {
-        "type": "shopify://apps/essential-grid-gallery/blocks/app-embed/b252af1e-c43a-4272-b19c-e87bc447c686",
+      "16278478101612877664": {
+        "type": "shopify://apps/pagefly-ai-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
         "settings": {}
       },
-      "16278478101612877664": {
-        "type": "shopify://apps/pagefly-ai-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
+      "2941664643703154558": {
+        "type": "shopify://apps/super-video-ugc/blocks/sticky_video_pro/2721aaf8-cc8e-48db-a5ff-caf1f1abfc5c",
+        "disabled": false,
+        "settings": {
+          "title": "Hey there!",
+          "product": "",
+          "text_1": "Book a Demo",
+          "link_1": "",
+          "text_2": "Video Commerce",
+          "link_2": "",
+          "text_3": "Video Channels",
+          "link_3": "",
+          "text_4": "Shoppable Images",
+          "link_4": "",
+          "show_index": true,
+          "show_collection": true,
+          "show_product": true,
+          "show_page": true,
+          "video_auto_play": true,
+          "show_close_btn": true,
+          "show_border_shadow": true,
+          "closing_delay": 24,
+          "video_width": 280,
+          "position": "left",
+          "position_margin": 2,
+          "bottom": 3,
+          "radius": 16
+        }
+      },
+      "2570186021254271643": {
+        "type": "shopify://apps/super-video-ugc/blocks/video_ugc_assets/2721aaf8-cc8e-48db-a5ff-caf1f1abfc5c",
         "disabled": false,
         "settings": {}
       }
