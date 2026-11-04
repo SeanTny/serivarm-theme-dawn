@@ -111,6 +111,41 @@
                     </a>
                   </div>
                 {%- when 'price' -%}
+                  {%- if block.settings.alignment == 'center' -%}
+                    <style>
+                      #price-{{ section.id }} {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        text-align: center;
+                      }
+                      #price-{{ section.id }} .price {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        text-align: center;
+                      }
+                    </style>
+                  {%- elsif block.settings.alignment == 'right' -%}
+                    <style>
+                      #price-{{ section.id }} {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        text-align: right;
+                      }
+                      #price-{{ section.id }} .price {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        text-align: right;
+                      }
+                    </style>
+                  {%- endif -%}
                   <div
                     id="price-{{ section.id }}"
                     role="status"
