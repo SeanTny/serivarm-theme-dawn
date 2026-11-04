@@ -983,6 +983,10 @@ a.product__text {
     scroll-padding-left: 0.5rem;
   }
 
+  .thumbnail-slider .slider-button {
+    display: none;
+  }
+
   .thumbnail-list__item.slider__slide {
     width: calc(25% - 0.6rem);
   }
