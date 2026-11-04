@@ -188,11 +188,6 @@
           "widget_type": "review-widget"
         }
       },
-      "16278478101612877664": {
-        "type": "shopify://apps/pagefly-ai-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
-        "disabled": false,
-        "settings": {}
-      },
       "2570186021254271643": {
         "type": "shopify://apps/super-video-ugc/blocks/video_ugc_assets/2721aaf8-cc8e-48db-a5ff-caf1f1abfc5c",
         "disabled": false,
@@ -200,9 +195,8 @@
       },
       "2941664643703154558": {
         "type": "shopify://apps/super-video-ugc/blocks/sticky_video_pro/2721aaf8-cc8e-48db-a5ff-caf1f1abfc5c",
-        "disabled": false,
+        "disabled": true,
         "settings": {
-          "video_hosted": "shopify://files/videos/视频-1.mp4",
           "title": "Hey there!",
           "product": "flow-sling",
           "text_1": "Book a Demo",
