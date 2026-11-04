@@ -12,13 +12,15 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
         "judge_me_reviews_preview_badge_Y9EKtR": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "alignment": "center"
+          }
         },
         "price": {
           "type": "price",
@@ -27,7 +29,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown",
+            "picker_type": "button",
             "swatch_shape": "square"
           }
         },
@@ -39,9 +41,13 @@
             "show_inventory_quantity": false
           }
         },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
         "text_VxKaH8": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom.short_desc.value }}&nbsp;",
             "text_style": "body"
@@ -57,7 +63,7 @@
         "icon_with_text_Te9hbg": {
           "type": "icon-with-text",
           "settings": {
-            "layout": "vertical",
+            "layout": "horizontal",
             "icon_1": "truck",
             "image_1": "shopify://shop_images/ui-icon-shipping-plane.svg",
             "heading_1": "Free US Shipping",
@@ -68,10 +74,6 @@
             "image_3": "shopify://shop_images/ui-icon-order-tracking.svg",
             "heading_3": "Order Tracking"
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         },
         "collapsible_tab_JAFdqD": {
           "type": "collapsible_tab",
@@ -120,15 +122,15 @@
         }
       },
       "block_order": [
-        "title",
         "judge_me_reviews_preview_badge_Y9EKtR",
+        "title",
         "price",
         "variant_picker",
         "inventory_N6rxNp",
+        "description",
         "text_VxKaH8",
         "buy_buttons",
         "icon_with_text_Te9hbg",
-        "description",
         "collapsible_tab_JAFdqD",
         "collapsible_tab_r9qyVz",
         "collapsible_tab_aMCiWX",

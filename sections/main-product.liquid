@@ -98,7 +98,11 @@
                     {{- block.settings.text -}}
                   </p>
                 {%- when 'title' -%}
-                  <div class="product__title" {{ block.shopify_attributes }}>
+                  <div
+                    class="product__title{% if block.settings.alignment == 'center' %} center{% elsif block.settings.alignment == 'right' %} right{% endif %}"
+                    {% if block.settings.alignment != blank %}style="text-align: {{ block.settings.alignment }};"{% endif %}
+                    {{ block.shopify_attributes }}
+                  >
                     <h1>{{ product.title | escape }}</h1>
                     <a href="{{ product.url }}" class="product__title">
                       <h2 class="h1">
@@ -794,7 +798,29 @@
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__3.label"
+            }
+          ],
+          "default": "left",
+          "label": "t:sections.collapsible_content.settings.heading_alignment.label"
+        }
+      ]
     },
     {
       "type": "price",
