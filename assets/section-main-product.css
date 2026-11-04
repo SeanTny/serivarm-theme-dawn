@@ -411,11 +411,18 @@ a.product__text {
   }
 
   .product__media-list .product__media-item {
-    width: calc(100% - 3rem);
+    width: 100%;
   }
 
   .product .product__media-list {
+    margin-left: 0;
+    width: 100%;
     column-gap: 1.5rem;
+    scroll-padding-left: 0;
+  }
+
+  .product .product__media-list .product__media-item:first-of-type {
+    margin-left: 0;
   }
 
   .product--mobile-columns .product__media-item {
