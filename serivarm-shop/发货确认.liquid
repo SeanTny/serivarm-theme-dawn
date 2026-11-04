@@ -190,11 +190,15 @@
                                       border="0"
                                     >
                                       <tr>
-                                        <td class="button__cell button__cell--primary" width="50%">
-                                          <a href="{% if fulfillment.tracking_numbers.size > 0 %}{{ parcelpanel_tracking_url }}{% else %}{{ order_status_url }}{% endif %}" class="button__text">View your order</a>
+                                        <td class="button__cell button__cell--primary" width="100%">
+                                          <a href="{{ order_status_url }}" class="button__text">View your order</a>
                                         </td>
-                                        <td class="button__cell--separator"></td>
-                                        <td class="button__cell button__cell--shop-app" width="50%">
+                                      </tr>
+                                      <tr>
+                                        <td class="button__cell--separator" height="12"></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="button__cell button__cell--shop-app" width="100%">
                                           <a
                                             href="{{ shop_app_tracking_url }}"
                                             class="button__text button__text--shop-app"
@@ -232,11 +236,15 @@
                                       border="0"
                                     >
                                       <tr>
-                                        <td class="button__cell button__cell--primary" width="50%">
-                                          <a href="{% if fulfillment.tracking_numbers.size > 0 %}{{ parcelpanel_tracking_url }}{% else %}{{ order_status_url }}{% endif %}" class="button__text">View your order</a>
+                                        <td class="button__cell button__cell--primary" width="100%">
+                                          <a href="{{ order_status_url }}" class="button__text">View your order</a>
                                         </td>
-                                        <td class="button__cell--separator"></td>
-                                        <td class="button__cell button__cell--shop-app" width="50%">
+                                      </tr>
+                                      <tr>
+                                        <td class="button__cell--separator" height="12"></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="button__cell button__cell--shop-app" width="100%">
                                           <a
                                             href="{{ shop_app_tracking_url }}"
                                             class="button__text button__text--shop-app"
@@ -265,25 +273,24 @@
                               </tr>
                               <tr>
                                 <td class="actions__cell">
-                                  <table cellpadding="0" cellspacing="0" border="0">
+                                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                     <tr>
-                                      <td valign="middle">
-                                        <table class="button main-action-cell">
+                                      <td valign="middle" width="100%">
+                                        <table class="button main-action-cell" width="100%">
                                           <tr>
                                             <td class="button__cell">
-                                              <a href="{% if fulfillment.tracking_numbers.size > 0 %}{{ parcelpanel_tracking_url }}{% else %}{{ order_status_url }}{% endif %}" class="button__text">View your order</a>
+                                              <a href="{{ order_status_url }}" class="button__text">View your order</a>
                                             </td>
                                           </tr>
                                         </table>
                                       </td>
-                                      <td
-                                        valign="middle"
-                                        style="{% if buyer_email_rtl == true %}padding-right: 15px; padding-left: 0;{% else %}padding-left: 15px;{% endif %} vertical-align: middle;"
-                                      >
+                                    </tr>
+                                    <tr>
+                                      <td valign="middle" width="100%" align="center">
                                         {% if shop.url %}
                                           <table
                                             class="link secondary-action-cell"
-                                            style="margin-top: 0; vertical-align: middle;"
+                                            style="margin-top: 12px; vertical-align: middle;"
                                           >
                                             <tr>
                                               <td class="link__cell">
