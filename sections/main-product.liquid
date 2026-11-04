@@ -121,11 +121,19 @@
                     {% endif %}
                     {{ block.shopify_attributes }}
                   >
+                    {%- liquid
+                      assign price_class = 'price--large'
+                      if block.settings.alignment == 'center'
+                        assign price_class = price_class | append: ' center'
+                      elsif block.settings.alignment == 'right'
+                        assign price_class = price_class | append: ' right'
+                      endif
+                    -%}
                     {%- render 'price',
                       product: product,
                       use_variant: true,
                       show_badges: true,
-                      price_class: 'price--large'
+                      price_class: price_class
                     -%}
                   </div>
                   {%- if product.quantity_price_breaks_configured? -%}
