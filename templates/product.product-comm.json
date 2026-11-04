@@ -24,13 +24,6 @@
           "type": "price",
           "settings": {}
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "square"
-          }
-        },
         "inventory_N6rxNp": {
           "type": "inventory",
           "settings": {
@@ -39,13 +32,20 @@
             "show_inventory_quantity": false
           }
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {}
         },
         "text_VxKaH8": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom.short_desc.value }}&nbsp;",
             "text_style": "body"
@@ -123,8 +123,8 @@
         "judge_me_reviews_preview_badge_Y9EKtR",
         "title",
         "price",
-        "variant_picker",
         "inventory_N6rxNp",
+        "variant_picker",
         "description",
         "text_VxKaH8",
         "buy_buttons",
