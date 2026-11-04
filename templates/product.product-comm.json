@@ -28,7 +28,7 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "dropdown",
-            "swatch_shape": "circle"
+            "swatch_shape": "square"
           }
         },
         "inventory_N6rxNp": {
