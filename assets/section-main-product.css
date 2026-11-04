@@ -988,7 +988,9 @@ a.product__text {
   }
 
   .thumbnail-list__item.slider__slide {
+    /* modify tusen 20261104 */
     width: calc(25% - 0.6rem);
+    /* modify tusen 20261104 */
   }
 }
 
