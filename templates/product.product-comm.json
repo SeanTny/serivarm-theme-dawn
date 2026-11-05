@@ -27,7 +27,7 @@
         "custom_liquid_Gkxh4T": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{%- if product.price >= 1000 -%} {% comment %} 4000 代表 40.00 美元 {% endcomment %}\n  <div style=\"text-align: center; margin: 10px 0;\">\n    <p style=\"margin: 0; color: #E65100; font-size: 15px; font-weight: 500;\">\n      Eligible for Free US Shipping\n    </p>\n  </div>\n{%- endif -%}"
+            "custom_liquid": "{%- assign threshold = 990 -%}\n<div class=\"product-shipping-badge\" style=\"text-align: center; margin: 12px 0;\">\n  {%- if product.price > threshold -%}\n    <p style=\"margin: 0; color: #E65100; font-size: 15px; font-weight: 600; line-height: 1.4;\">\n      Free US Shipping\n    </p>\n  {%- else -%}\n    <p style=\"margin: 0; color: #666666; font-size: 14px; font-weight: 500; line-height: 1.4;\">\n      Standard Shipping (Free on orders over $9.90)\n    </p>\n  {%- endif -%}\n</div>"
           }
         },
         "variant_picker": {
