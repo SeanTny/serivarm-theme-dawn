@@ -24,11 +24,10 @@
             "alignment": "center"
           }
         },
-        "text_hdzHdA": {
-          "type": "text",
+        "custom_liquid_Gkxh4T": {
+          "type": "custom_liquid",
           "settings": {
-            "text": "Free Shipping&nbsp;",
-            "text_style": "body"
+            "custom_liquid": ""
           }
         },
         "variant_picker": {
@@ -134,7 +133,7 @@
       "block_order": [
         "title",
         "price",
-        "text_hdzHdA",
+        "custom_liquid_Gkxh4T",
         "variant_picker",
         "inventory_N6rxNp",
         "description",
