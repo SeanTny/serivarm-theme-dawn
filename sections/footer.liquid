@@ -367,31 +367,30 @@
   {%- if section.settings.enable_collapsible_menu -%}
     <script>
       (function () {
+        const mql = window.matchMedia('(min-width: 750px)');
+
         function syncFooterAccordion() {
-          const isDesktop = window.matchMedia('(min-width: 750px)').matches;
+          const isDesktop = mql.matches;
           document.querySelectorAll('.footer-block__details').forEach(function (detail) {
             if (isDesktop) {
               detail.setAttribute('open', '');
             } else {
-              if (!detail.dataset.userInteracted) {
-                detail.removeAttribute('open');
-              }
+              detail.removeAttribute('open');
             }
           });
         }
 
         syncFooterAccordion();
+
+        if (mql.addEventListener) {
+          mql.addEventListener('change', syncFooterAccordion);
+        } else if (mql.addListener) {
+          mql.addListener(syncFooterAccordion);
+        }
+
         window.addEventListener('resize', syncFooterAccordion);
         document.addEventListener('DOMContentLoaded', syncFooterAccordion);
         document.addEventListener('shopify:section:load', syncFooterAccordion);
-
-        document.querySelectorAll('.footer-block__details').forEach(function (detail) {
-          detail.addEventListener('toggle', function () {
-            if (!window.matchMedia('(min-width: 750px)').matches) {
-              detail.dataset.userInteracted = 'true';
-            }
-          });
-        });
       })();
     </script>
   {%- endif -%}
