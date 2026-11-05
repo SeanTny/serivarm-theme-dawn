@@ -14,7 +14,7 @@
     "favicon": "shopify://shop_images/branch-serivarm-logo-014.svg",
     "type_header_font": "roboto_slab_n4",
     "heading_scale": 100,
-    "type_body_font": "roboto_slab_n4",
+    "type_body_font": "roboto_n4",
     "body_scale": 100,
     "page_width": 1400,
     "spacing_sections": 0,
