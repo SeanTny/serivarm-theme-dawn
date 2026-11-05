@@ -27,7 +27,7 @@
         "custom_liquid_Gkxh4T": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": ""
+            "custom_liquid": "{%- if product.price >= 1000 -%} {% comment %} 4000 代表 40.00 美元 {% endcomment %}\n  <div style=\"text-align: center; margin: 10px 0;\">\n    <p style=\"margin: 0; color: #E65100; font-size: 15px; font-weight: 500;\">\n      Eligible for Free US Shipping\n    </p>\n  </div>\n{%- endif -%}"
           }
         },
         "variant_picker": {
