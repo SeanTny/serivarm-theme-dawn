@@ -19,6 +19,7 @@
   {% endif %}
 {% endif %}
 
+{% capture parcelpanel_tracking_url %}{{ shop.url }}/apps/track-order?nums={{ fulfillment.tracking_numbers.first | url_encode }}{% endcapture %}
 <!DOCTYPE html>
 <html lang="en"{% if buyer_email_rtl %} dir="rtl"{% endif %}>
   <head>
@@ -49,7 +50,7 @@
 
               <table class="row">
                 <tr>
-                  <td class="shop-name__cell"{% if buyer_email_rtl == true %} align="right"{% endif %}>
+                  <td class="shop-name__cell" colspan="2" align="center" style="text-align: center;">
                     {%- if shop.email_logo_url %}
                       <img src="{{shop.email_logo_url}}" alt="{{ shop.name }}" width="{{ shop.email_logo_width }}">
                     {%- else %}
@@ -58,8 +59,9 @@
                       </h1>
                     {%- endif %}
                   </td>
-
-                    <td{% if buyer_email_rtl == true %} class="order-po-number__cell"{% endif %}>
+                </tr>
+                <tr>
+                  <td{% if buyer_email_rtl == true %} class="order-po-number__cell" align="left"{% else %} align="right"{% endif %} colspan="2">
                       <table class="order-po-number__container">
                         <tr>
                           <td class="order-number__cell"{% if buyer_email_rtl == true %} align="left"{% endif %}>
@@ -115,26 +117,44 @@
   </tr>
   <tr>
     <td class="actions__cell">
-      <table cellpadding="0" cellspacing="0" border="0">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td valign="middle">
-            <table class="button main-action-cell">
+          <td valign="middle" width="100%">
+            <table class="button main-action-cell" width="100%">
               <tr>
                 <td class="button__cell"><a href="{{ order_status_url }}" class="button__text">View your order</a></td>
               </tr>
             </table>
           </td>
-          <td valign="middle" style="{% if buyer_email_rtl == true %}padding-right: 15px; padding-left: 0;{% else %}padding-left: 15px;{% endif %} vertical-align: middle;">
-            {% if shop.url %}
-    <table class="link secondary-action-cell" style="margin-top: 0; vertical-align: middle;">
-      <tr>
-        <td class="link__cell">or <a href="{{ shop.url }}">Visit our store</a></td>
-      </tr>
-    </table>
-{% endif %}
-
-          </td>
         </tr>
+        {% if shop_app_tracking_url and shop_app_tracking_button_variant_key %}
+          <tr>
+            <td class="button__cell--separator" height="12"></td>
+          </tr>
+          <tr>
+            <td width="100%">
+              {% capture shop_logo_img %}<img src="{{ 'mailer/shop_logo.png' | cdn_asset_url }}" alt="Shop" width="42" height="17" class="button__shop-logo">{% endcapture %}
+              <table class="actions-buttons" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="button__cell button__cell--shop-app" width="100%">
+                    <a href="{{ shop_app_tracking_url }}" class="button__text button__text--shop-app">{% if shop_app_tracking_button_variant_key == 'track_with_shop' %}Track order with{% else %}Download to track with{% endif %} {{ shop_logo_img -}}</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        {% endif %}
+        {% if shop.url %}
+          <tr>
+            <td valign="middle" width="100%" align="center">
+              <table class="link secondary-action-cell" width="100%" style="margin-top: 12px; vertical-align: middle;">
+                <tr>
+                  <td class="link__cell" align="center">or <a href="{{ shop.url }}">Visit our store</a></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        {% endif %}
       </table>
     </td>
   </tr>
@@ -159,20 +179,15 @@
             {% if fulfillment.tracking_numbers.size > 0 %}
   <p class="disclaimer__subtext">
     <br/>
-    {% if fulfillment.tracking_numbers.size == 1 and fulfillment.tracking_company and fulfillment.tracking_url %}
-      {% if buyer_email_rtl == true %}&rlm;&lrm;<span dir="auto" style="display: inline-block; unicode-bidi: isolate; font-size: inherit;">{% endif %}{{ fulfillment.tracking_company }}{% if buyer_email_rtl == true %}</span>&lrm;&rlm;{% endif %} tracking number: <a href="{{ fulfillment.tracking_url }}">{% if buyer_email_rtl == true %}<span dir="ltr" style="display: inline-block; unicode-bidi: isolate; font-size: inherit;">{% endif %}{{ fulfillment.tracking_numbers.first }}{% if buyer_email_rtl == true %}</span>{% endif %}</a>
+    {% if fulfillment.tracking_numbers.size == 1 and fulfillment.tracking_company %}
+      {% if buyer_email_rtl == true %}&rlm;&lrm;<span dir="auto" style="display: inline-block; unicode-bidi: isolate; font-size: inherit;">{% endif %}{{ fulfillment.tracking_company }}{% if buyer_email_rtl == true %}</span>&lrm;&rlm;{% endif %} tracking number: <a href="{{ parcelpanel_tracking_url }}">{% if buyer_email_rtl == true %}<span dir="ltr" style="display: inline-block; unicode-bidi: isolate; font-size: inherit;">{% endif %}{{ fulfillment.tracking_numbers.first }}{% if buyer_email_rtl == true %}</span>{% endif %}</a>
     {% elsif fulfillment.tracking_numbers.size == 1 %}
-      Tracking number: {% if buyer_email_rtl == true %}<span dir="ltr" style="display: inline-block; unicode-bidi: isolate; font-size: inherit;">{% endif %}{{ fulfillment.tracking_numbers.first }}{% if buyer_email_rtl == true %}</span>{% endif %}
+      Tracking number: <a href="{{ parcelpanel_tracking_url }}">{% if buyer_email_rtl == true %}<span dir="ltr" style="display: inline-block; unicode-bidi: isolate; font-size: inherit;">{% endif %}{{ fulfillment.tracking_numbers.first }}{% if buyer_email_rtl == true %}</span>{% endif %}</a>
     {% else %}
       {% if buyer_email_rtl == true %}&rlm;&lrm;<span dir="auto" style="display: inline-block; unicode-bidi: isolate; font-size: inherit;">{% endif %}{{ fulfillment.tracking_company }}{% if buyer_email_rtl == true %}</span>&lrm;&rlm;{% endif %} tracking numbers:<br />
       {% for tracking_number in fulfillment.tracking_numbers %}
-        {% if fulfillment.tracking_urls[forloop.index0] %}
-          <a href="{{ fulfillment.tracking_urls[forloop.index0] }}">
-            {% if buyer_email_rtl == true %}<span dir="ltr" style="display: inline-block; unicode-bidi: isolate; font-size: inherit;">{% endif %}{{ tracking_number }}{% if buyer_email_rtl == true %}</span>{% endif %}
-          </a>
-        {% else %}
-            {% if buyer_email_rtl == true %}<span dir="ltr" style="display: inline-block; unicode-bidi: isolate; font-size: inherit;">{% endif %}{{ tracking_number }}{% if buyer_email_rtl == true %}</span>{% endif %}
-        {% endif %}
+        {% capture parcelpanel_tracking_url %}{{ shop.url }}/apps/track-order?nums={{ tracking_number | url_encode }}{% endcapture %}
+        <a href="{{ parcelpanel_tracking_url }}">{% if buyer_email_rtl == true %}<span dir="ltr" style="display: inline-block; unicode-bidi: isolate; font-size: inherit;">{% endif %}{{ tracking_number }}{% if buyer_email_rtl == true %}</span>{% endif %}</a>
         <br/>
       {% endfor %}
     {% endif %}
