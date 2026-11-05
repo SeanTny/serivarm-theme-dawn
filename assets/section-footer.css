@@ -413,16 +413,22 @@
 }
 
 .footer-block__brand-info {
-  text-align: left;
-}
-
-.footer-block:only-child .footer-block__brand-info {
   text-align: center;
 }
 
-.footer-block:only-child > .footer-block__brand-info > .footer-block__image-wrapper {
+.footer-block__brand-info .footer-block__image-wrapper {
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer-block__brand-info .footer-block__image-wrapper img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-block__brand-info .footer-block__heading,
+.footer-block__brand-info .rte {
+  text-align: center;
 }
 
 .footer-block-image > img,
@@ -430,12 +436,12 @@
   height: auto;
 }
 
-.footer-block:only-child .footer-block__brand-info .footer__list-social.list-social {
-  justify-content: center;
-}
-
 .footer-block__brand-info .footer__list-social.list-social {
-  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-left: 0;
+  margin: 1.5rem auto 0;
 }
 
 .footer-block__details-content .placeholder-svg {
