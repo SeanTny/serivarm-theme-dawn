@@ -417,7 +417,7 @@ a.product__text {
 @media screen and (max-width: 749px) {
   .product__media-list {
     margin-left: -2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.0rem;
     width: calc(100% + 4rem);
   }
 
@@ -450,11 +450,7 @@ a.product__text {
   }
 
   .product--mobile-show .product__media-list {
-    margin-bottom: 0;
-  }
-
-  .product--mobile-show .thumbnail-slider {
-    margin-top: -0.5rem;
+    margin-bottom: 1rem;
   }
 
   .product .product__media-list.slider--mobile {
