@@ -24,18 +24,18 @@
             "alignment": "center"
           }
         },
-        "custom_liquid_Gkxh4T": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{%- assign threshold = 990 -%}\n<div class=\"product-shipping-badge\" style=\"text-align: center; margin: 12px 0;\">\n  {%- if product.price >= threshold -%}\n    <p style=\"margin: 0; color: #465C50; font-size: 14px; font-weight: 500; line-height: 1.4;\">\n      Free Shipping Available\n    </p>\n  {%- else -%}\n    <p style=\"margin: 0; color: #666666; font-size: 13px; font-weight: 500; line-height: 1.4;\">\n      Standard Shipping (Free on orders over $9.90)\n    </p>\n  {%- endif -%}\n</div>"
-          }
-        },
         "inventory_N6rxNp": {
           "type": "inventory",
           "settings": {
             "text_style": "body",
             "inventory_threshold": 1,
             "show_inventory_quantity": false
+          }
+        },
+        "custom_liquid_Gkxh4T": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign threshold = 990 -%}\n<div class=\"product-shipping-badge\" style=\"text-align: center; margin: 12px 0;\">\n  {%- if product.price >= threshold -%}\n    <p style=\"margin: 0; color: #465C50; font-size: 14px; font-weight: 500; line-height: 1.4;\">\n      Free Shipping Available\n    </p>\n  {%- else -%}\n    <p style=\"margin: 0; color: #666666; font-size: 13px; font-weight: 500; line-height: 1.4;\">\n      Standard Shipping (Free on orders over $9.90)\n    </p>\n  {%- endif -%}\n</div>"
           }
         },
         "variant_picker": {
@@ -63,7 +63,7 @@
         "icon_with_text_Te9hbg": {
           "type": "icon-with-text",
           "settings": {
-            "layout": "vertical",
+            "layout": "horizontal",
             "icon_1": "truck",
             "image_1": "shopify://shop_images/ui-icon-shipping-plane.svg",
             "heading_1": "Free US Shipping",
@@ -128,8 +128,8 @@
       "block_order": [
         "title",
         "price",
-        "custom_liquid_Gkxh4T",
         "inventory_N6rxNp",
+        "custom_liquid_Gkxh4T",
         "variant_picker",
         "buy_buttons",
         "text_VxKaH8",
