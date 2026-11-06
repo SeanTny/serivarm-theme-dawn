@@ -1316,6 +1316,11 @@ a.product__text {
   margin-right: var(--icon-spacing);
 }
 
+.product__info-container .icon-with-text--vertical img {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
 .icon-with-text--horizontal .h4 {
   padding-top: calc(var(--icon-size) + var(--icon-spacing));
   text-align: center;
