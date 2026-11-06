@@ -24,6 +24,14 @@
             "alignment": "center"
           }
         },
+        "custom_liquid_Kp6KP7": {
+          "type": "custom_liquid",
+          "name": "分割线",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<hr style=\"\n  border: none;\n  height: 1px;\n  background-color: rgba(var(--color-foreground), 0.12);\n  margin: 0rem 0;\n\">"
+          }
+        },
         "inventory_N6rxNp": {
           "type": "inventory",
           "settings": {
@@ -34,6 +42,7 @@
         },
         "custom_liquid_Gkxh4T": {
           "type": "custom_liquid",
+          "name": "Shipping available",
           "settings": {
             "custom_liquid": "{%- assign threshold = 990 -%}\n<div class=\"product-shipping-badge\" style=\"text-align: center; margin: 12px 0;\">\n  {%- if product.price >= threshold -%}\n    <p style=\"margin: 0; color: #465C50; font-size: 14px; font-weight: 500; line-height: 1.4;\">\n      Free Shipping Available\n    </p>\n  {%- else -%}\n    <p style=\"margin: 0; color: #666666; font-size: 13px; font-weight: 500; line-height: 1.4;\">\n      Standard Shipping (Free on orders over $9.90)\n    </p>\n  {%- endif -%}\n</div>"
           }
@@ -67,13 +76,11 @@
             "heading_3": "Order Tracking"
           }
         },
-        "collapsible_tab_JAFdqD": {
-          "type": "collapsible_tab",
+        "custom_liquid_JTzXWL": {
+          "type": "custom_liquid",
+          "name": "分割线",
           "settings": {
-            "heading": "{{ product.metafields.custom.custom_info_01_title.value }}",
-            "icon": "none",
-            "content": "{{ product.metafields.custom.custom_info_01_content | metafield_tag }}",
-            "page": ""
+            "custom_liquid": "<hr style=\"\n  border: none;\n  height: 1px;\n  background-color: rgba(var(--color-foreground), 0.12);\n  margin: 0.8rem 0;\n\">"
           }
         },
         "description": {
@@ -82,9 +89,19 @@
         },
         "text_VxKaH8": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom.short_desc.value }}&nbsp;",
             "text_style": "body"
+          }
+        },
+        "collapsible_tab_JAFdqD": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.custom.custom_info_01_title.value }}",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.custom_info_01_content | metafield_tag }}",
+            "page": ""
           }
         },
         "collapsible_tab_r9qyVz": {
@@ -127,14 +144,16 @@
       "block_order": [
         "title",
         "price",
+        "custom_liquid_Kp6KP7",
         "inventory_N6rxNp",
         "custom_liquid_Gkxh4T",
         "variant_picker",
         "buy_buttons",
         "icon_with_text_Te9hbg",
-        "collapsible_tab_JAFdqD",
+        "custom_liquid_JTzXWL",
         "description",
         "text_VxKaH8",
+        "collapsible_tab_JAFdqD",
         "collapsible_tab_r9qyVz",
         "collapsible_tab_aMCiWX",
         "collapsible_tab_qXte7U",
