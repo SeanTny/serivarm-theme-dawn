@@ -246,6 +246,31 @@ product-info {
   margin-top: 0;
 }
 
+/* Compact spacing for product header info (Title, Price, Text, Inventory) */
+.product__info-container > [id^="price-"] {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.product__info-container > [id^="price-"] .price {
+  margin-bottom: 0;
+}
+
+.product__info-container div:has(> form.installment:not(:has(shopify-payment-terms))),
+.product__info-container form.installment:not(:has(shopify-payment-terms)) {
+  display: none !important;
+  margin: 0 !important;
+}
+
+.product__info-container > .product__text {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.product__info-container > .product__inventory {
+  margin-top: 0.6rem;
+}
+
 .product__text {
   margin-bottom: 0;
 }
@@ -262,7 +287,7 @@ a.product__text {
 
 .product__title {
   word-break: break-word;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .product__title > * {
