@@ -27,7 +27,6 @@
         "custom_liquid_Kp6KP7": {
           "type": "custom_liquid",
           "name": "分割线",
-          "disabled": true,
           "settings": {
             "custom_liquid": "<hr style=\"\n  border: none;\n  height: 1px;\n  background-color: rgba(var(--color-foreground), 0.12);\n  margin: 0rem 0;\n\">"
           }
