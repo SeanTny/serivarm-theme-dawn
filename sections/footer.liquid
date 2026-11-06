@@ -66,27 +66,38 @@
               data-cascade
             {% endif %}
           >
+            {%- assign last_collapsible_index = 0 -%}
+            {%- if section.settings.enable_collapsible_menu -%}
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'link_list' -%}
+                  {%- assign last_collapsible_index = forloop.index -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% if section.settings.enable_collapsible_menu %} footer-block--collapsible{% if forloop.index == last_collapsible_index %} footer-block--collapsible-last{% endif %}{% endif %}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
-                {%- endif -%}
-
-                {%- case block.type -%}
-                  {%- when '@app' -%}
-                    {% render block %}
-                  {%- when 'text' -%}
-                    <div class="footer-block__details-content rte">
-                      {{ block.settings.subtext }}
-                    </div>
-                  {%- when 'link_list' -%}
+                {%- if block.type == 'link_list' and section.settings.enable_collapsible_menu -%}
+                  <details id="Details-{{ block.id }}-{{ section.id }}" class="footer-block__details">
+                    <summary class="footer-block__summary">
+                      <h2 class="footer-block__heading inline-richtext">
+                        {%- if block.settings.heading != blank -%}
+                          {{- block.settings.heading -}}
+                        {%- else -%}
+                          {{- block.settings.menu.title | escape -}}
+                        {%- endif -%}
+                      </h2>
+                      <span class="svg-wrapper footer-block__caret">
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </span>
+                    </summary>
                     {%- if block.settings.menu != blank -%}
                       <ul class="footer-block__details-content list-unstyled">
                         {%- for link in block.settings.menu.links -%}
@@ -101,6 +112,34 @@
                         {%- endfor -%}
                       </ul>
                     {%- endif -%}
+                  </details>
+                {%- else -%}
+                  {%- if block.settings.heading != blank -%}
+                    <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  {%- endif -%}
+
+                  {%- case block.type -%}
+                    {%- when '@app' -%}
+                      {% render block %}
+                    {%- when 'text' -%}
+                      <div class="footer-block__details-content rte">
+                        {{ block.settings.subtext }}
+                      </div>
+                    {%- when 'link_list' -%}
+                      {%- if block.settings.menu != blank -%}
+                        <ul class="footer-block__details-content list-unstyled">
+                          {%- for link in block.settings.menu.links -%}
+                            <li>
+                              <a
+                                href="{{ link.url }}"
+                                class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                              >
+                                {{ link.title | escape }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
                       {%- if settings.brand_image != blank -%}
@@ -154,6 +193,7 @@
                       {%- endif -%}
                     </div>
                 {%- endcase -%}
+              {%- endif -%}
               </div>
             {%- endfor -%}
           </div>
@@ -323,6 +363,37 @@
       </div>
     </div>
   </div>
+
+  {%- if section.settings.enable_collapsible_menu -%}
+    <script>
+      (function () {
+        const mql = window.matchMedia('(min-width: 750px)');
+
+        function syncFooterAccordion() {
+          const isDesktop = mql.matches;
+          document.querySelectorAll('.footer-block__details').forEach(function (detail) {
+            if (isDesktop) {
+              detail.setAttribute('open', '');
+            } else {
+              detail.removeAttribute('open');
+            }
+          });
+        }
+
+        syncFooterAccordion();
+
+        if (mql.addEventListener) {
+          mql.addEventListener('change', syncFooterAccordion);
+        } else if (mql.addListener) {
+          mql.addListener(syncFooterAccordion);
+        }
+
+        window.addEventListener('resize', syncFooterAccordion);
+        document.addEventListener('DOMContentLoaded', syncFooterAccordion);
+        document.addEventListener('shopify:section:load', syncFooterAccordion);
+      })();
+    </script>
+  {%- endif -%}
 </footer>
 
 {% schema %}
@@ -450,6 +521,16 @@
       "id": "newsletter_heading",
       "default": "t:sections.footer.settings.newsletter_heading.default",
       "label": "t:sections.footer.settings.newsletter_heading.label"
+    },
+    {
+      "type": "header",
+      "content": "移动端折叠菜单 (Mobile Collapsible Menu)"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_collapsible_menu",
+      "default": true,
+      "label": "在移动端折叠菜单 (Enable collapsible menu on mobile)"
     },
     {
       "type": "header",

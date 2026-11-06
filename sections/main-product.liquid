@@ -98,7 +98,11 @@
                     {{- block.settings.text -}}
                   </p>
                 {%- when 'title' -%}
-                  <div class="product__title" {{ block.shopify_attributes }}>
+                  <div
+                    class="product__title{% if block.settings.alignment == 'center' %} center{% elsif block.settings.alignment == 'right' %} right{% endif %}"
+                    {% if block.settings.alignment != blank %}style="text-align: {{ block.settings.alignment }};"{% endif %}
+                    {{ block.shopify_attributes }}
+                  >
                     <h1>{{ product.title | escape }}</h1>
                     <a href="{{ product.url }}" class="product__title">
                       <h2 class="h1">
@@ -107,21 +111,80 @@
                     </a>
                   </div>
                 {%- when 'price' -%}
-                  <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                  {%- if block.settings.alignment == 'center' -%}
+                    <style>
+                      #price-{{ section.id }} {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        text-align: center;
+                      }
+                      #price-{{ section.id }} .price {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        text-align: center;
+                      }
+                    </style>
+                  {%- elsif block.settings.alignment == 'right' -%}
+                    <style>
+                      #price-{{ section.id }} {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        text-align: right;
+                      }
+                      #price-{{ section.id }} .price {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        text-align: right;
+                      }
+                    </style>
+                  {%- endif -%}
+                  <div
+                    id="price-{{ section.id }}"
+                    role="status"
+                    {% if block.settings.alignment == 'center' %}
+                      class="center" style="text-align: center;"
+                    {% elsif block.settings.alignment == 'right' %}
+                      class="right" style="text-align: right;"
+                    {% endif %}
+                    {{ block.shopify_attributes }}
+                  >
+                    {%- liquid
+                      assign price_class = 'price--large'
+                      if block.settings.alignment == 'center'
+                        assign price_class = price_class | append: ' center'
+                      elsif block.settings.alignment == 'right'
+                        assign price_class = price_class | append: ' right'
+                      endif
+                    -%}
                     {%- render 'price',
                       product: product,
                       use_variant: true,
                       show_badges: true,
-                      price_class: 'price--large'
+                      price_class: price_class
                     -%}
                   </div>
                   {%- if product.quantity_price_breaks_configured? -%}
-                    <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
+                    <div
+                      class="volume-pricing-note{% if block.settings.alignment == 'center' %} center{% elsif block.settings.alignment == 'right' %} right{% endif %}"
+                      id="Volume-Note-{{ section.id }}"
+                      {% if block.settings.alignment != blank %}style="text-align: {{ block.settings.alignment }};"{% endif %}
+                    >
                       <span>{{ 'products.product.volume_pricing.note' | t }}</span>
                     </div>
                   {%- endif -%}
                   {%- if cart.taxes_included or cart.duties_included or shop.shipping_policy.body != blank -%}
-                    <div class="product__tax caption rte">
+                    <div
+                      class="product__tax caption rte{% if block.settings.alignment == 'center' %} center{% elsif block.settings.alignment == 'right' %} right{% endif %}"
+                      {% if block.settings.alignment != blank %}style="text-align: {{ block.settings.alignment }};"{% endif %}
+                    >
                       {%- if cart.duties_included and cart.taxes_included -%}
                         {{ 'products.product.duties_and_taxes_included' | t }}
                       {%- elsif cart.taxes_included -%}
@@ -134,7 +197,14 @@
                       {%- endif -%}
                     </div>
                   {%- endif -%}
-                  <div {{ block.shopify_attributes }}>
+                  <div
+                    {% if block.settings.alignment == 'center' %}
+                      class="center" style="text-align: center;"
+                    {% elsif block.settings.alignment == 'right' %}
+                      class="right" style="text-align: right;"
+                    {% endif %}
+                    {{ block.shopify_attributes }}
+                  >
                     {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                     {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
                       <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
@@ -794,12 +864,56 @@
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.collapsible_content.settings.heading_alignment.options__3.label"
+            }
+          ],
+          "default": "left",
+          "label": "t:sections.collapsible_content.settings.heading_alignment.label"
+        }
+      ]
     },
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__3.label"
+            }
+          ],
+          "default": "left",
+          "label": "t:sections.image-with-text.settings.desktop_content_alignment.label"
+        }
+      ]
     },
     {
       "type": "sku",

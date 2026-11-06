@@ -411,7 +411,21 @@ a.product__text {
   }
 
   .product__media-list .product__media-item {
-    width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
+    width: 100%;
+  }
+
+  .product .product__media-list {
+    margin-left: 0;
+    width: 100%;
+    column-gap: 1.5rem;
+  }
+
+  .product .product__media-list.slider--mobile {
+    scroll-padding-left: 0;
+  }
+
+  .product .product__media-list .product__media-item:first-of-type {
+    margin-left: 0;
   }
 
   .product--mobile-columns .product__media-item {
@@ -969,8 +983,14 @@ a.product__text {
     scroll-padding-left: 0.5rem;
   }
 
+  .thumbnail-slider .slider-button {
+    display: none;
+  }
+
   .thumbnail-list__item.slider__slide {
-    width: calc(33% - 0.6rem);
+    /* modify tusen 20261104 */
+    width: calc(25% - 0.6rem);
+    /* modify tusen 20261104 */
   }
 }
 
