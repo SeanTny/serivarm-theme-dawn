@@ -450,7 +450,11 @@ a.product__text {
   }
 
   .product--mobile-show .product__media-list {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+  }
+
+  .product--mobile-show .thumbnail-slider {
+    margin-top: -0.5rem;
   }
 
   .product .product__media-list.slider--mobile {
