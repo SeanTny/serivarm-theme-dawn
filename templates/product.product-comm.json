@@ -30,6 +30,20 @@
             "custom_liquid": "{%- assign threshold = 990 -%}\n<div class=\"product-shipping-badge\" style=\"text-align: center; margin: 12px 0;\">\n  {%- if product.price >= threshold -%}\n    <p style=\"margin: 0; color: #465C50; font-size: 14px; font-weight: 500; line-height: 1.4;\">\n      Free Shipping Available\n    </p>\n  {%- else -%}\n    <p style=\"margin: 0; color: #666666; font-size: 13px; font-weight: 500; line-height: 1.4;\">\n      Standard Shipping (Free on orders over $9.90)\n    </p>\n  {%- endif -%}\n</div>"
           }
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "square"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
         "inventory_N6rxNp": {
           "type": "inventory",
           "settings": {
@@ -38,26 +52,12 @@
             "show_inventory_quantity": false
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown",
-            "swatch_shape": "square"
-          }
-        },
         "text_VxKaH8": {
           "type": "text",
           "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom.short_desc.value }}&nbsp;",
             "text_style": "body"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
           }
         },
         "icon_with_text_Te9hbg": {
@@ -129,10 +129,10 @@
         "title",
         "price",
         "custom_liquid_Gkxh4T",
-        "inventory_N6rxNp",
         "variant_picker",
-        "text_VxKaH8",
         "buy_buttons",
+        "inventory_N6rxNp",
+        "text_VxKaH8",
         "icon_with_text_Te9hbg",
         "description",
         "collapsible_tab_JAFdqD",
