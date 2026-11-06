@@ -75,10 +75,6 @@
             "heading_3": "Order Tracking"
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "collapsible_tab_JAFdqD": {
           "type": "collapsible_tab",
           "settings": {
@@ -87,6 +83,10 @@
             "content": "{{ product.metafields.custom.custom_info_01_content | metafield_tag }}",
             "page": ""
           }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         },
         "collapsible_tab_r9qyVz": {
           "type": "collapsible_tab",
@@ -134,8 +134,8 @@
         "buy_buttons",
         "text_VxKaH8",
         "icon_with_text_Te9hbg",
-        "description",
         "collapsible_tab_JAFdqD",
+        "description",
         "collapsible_tab_r9qyVz",
         "collapsible_tab_aMCiWX",
         "collapsible_tab_qXte7U",
