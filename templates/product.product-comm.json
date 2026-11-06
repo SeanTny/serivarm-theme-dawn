@@ -30,13 +30,6 @@
             "custom_liquid": "{%- assign threshold = 990 -%}\n<div class=\"product-shipping-badge\" style=\"text-align: center; margin: 12px 0;\">\n  {%- if product.price >= threshold -%}\n    <p style=\"margin: 0; color: #465C50; font-size: 14px; font-weight: 500; line-height: 1.4;\">\n      Free Shipping Available\n    </p>\n  {%- else -%}\n    <p style=\"margin: 0; color: #666666; font-size: 13px; font-weight: 500; line-height: 1.4;\">\n      Standard Shipping (Free on orders over $9.90)\n    </p>\n  {%- endif -%}\n</div>"
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown",
-            "swatch_shape": "square"
-          }
-        },
         "inventory_N6rxNp": {
           "type": "inventory",
           "settings": {
@@ -45,9 +38,12 @@
             "show_inventory_quantity": false
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "square"
+          }
         },
         "text_VxKaH8": {
           "type": "text",
@@ -67,7 +63,7 @@
         "icon_with_text_Te9hbg": {
           "type": "icon-with-text",
           "settings": {
-            "layout": "horizontal",
+            "layout": "vertical",
             "icon_1": "truck",
             "image_1": "shopify://shop_images/ui-icon-shipping-plane.svg",
             "heading_1": "Free US Shipping",
@@ -78,6 +74,10 @@
             "image_3": "shopify://shop_images/ui-icon-order-tracking.svg",
             "heading_3": "Order Tracking"
           }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         },
         "collapsible_tab_JAFdqD": {
           "type": "collapsible_tab",
@@ -129,12 +129,12 @@
         "title",
         "price",
         "custom_liquid_Gkxh4T",
-        "variant_picker",
         "inventory_N6rxNp",
-        "description",
+        "variant_picker",
         "text_VxKaH8",
         "buy_buttons",
         "icon_with_text_Te9hbg",
+        "description",
         "collapsible_tab_JAFdqD",
         "collapsible_tab_r9qyVz",
         "collapsible_tab_aMCiWX",
