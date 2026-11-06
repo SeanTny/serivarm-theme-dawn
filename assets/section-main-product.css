@@ -1206,6 +1206,7 @@ a.product__text {
 .product__inventory {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 
