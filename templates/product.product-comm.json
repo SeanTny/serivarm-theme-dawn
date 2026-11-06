@@ -141,7 +141,7 @@
         "collapsible_tab_69ifWy"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {/* 去掉手机端主图滑块底部的微小空隙 */ .product__media-list .slider__slide {padding-bottom: 0 !important; } /* 将缩略图容器进一步往上提，负数值越大靠得越近，默认是 -1rem */ .product--mobile-show .thumbnail-slider {margin-top: -1.5rem !important; }}"
+        "@media screen and (max-width: 749px) {/* 去掉手机端主图滑块底部的微小空隙 */ .product__media-list .slider__slide {padding-bottom: 0 !important; } /* 将缩略图容器进一步往上提，负数值越大靠得越近，默认是 -1rem */ .product--mobile-show .thumbnail-slider {margin-top: 0rem !important; }}"
       ],
       "settings": {
         "enable_sticky_info": true,
