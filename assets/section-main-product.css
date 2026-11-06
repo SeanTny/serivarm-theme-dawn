@@ -231,6 +231,20 @@ product-info {
   margin: 2.5rem 0;
 }
 
+/* Tighten the spacing around the shipping message on product pages */
+.product__info-container > *:has(+ .product-shipping-badge) {
+  margin-bottom: 0.5rem;
+}
+
+.product__info-container > .product-shipping-badge {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.product__info-container > .product-shipping-badge + .product__inventory {
+  margin-top: 0.5rem;
+}
+
 /* Reduce spacing between variant picker and buy buttons */
 .product__info-container variant-selects .product-form__input:last-of-type {
   margin-bottom: 0;
