@@ -86,14 +86,6 @@
           "type": "description",
           "settings": {}
         },
-        "text_VxKaH8": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ product.metafields.custom.short_desc.value }}&nbsp;",
-            "text_style": "body"
-          }
-        },
         "collapsible_tab_JAFdqD": {
           "type": "collapsible_tab",
           "settings": {
@@ -151,7 +143,6 @@
         "icon_with_text_Te9hbg",
         "custom_liquid_JTzXWL",
         "description",
-        "text_VxKaH8",
         "collapsible_tab_JAFdqD",
         "collapsible_tab_r9qyVz",
         "collapsible_tab_aMCiWX",
