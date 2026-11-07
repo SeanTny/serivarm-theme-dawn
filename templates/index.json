@@ -53,7 +53,7 @@
         "desktop_content_alignment": "center",
         "show_text_box": false,
         "color_scheme": "scheme-4",
-        "stack_images_on_mobile": true,
+        "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
@@ -147,7 +147,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 12,
-        "padding_bottom": 32
+        "padding_bottom": 0
       }
     },
     "rich_text_9AD6f4": {
