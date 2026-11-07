@@ -1,4 +1,11 @@
-{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.image == blank -%}
+  <style>
+    #shopify-section-{{ section.id }} {
+      display: none !important;
+    }
+  </style>
+{%- else -%}
+  {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -106,6 +113,7 @@
     </div>
   </div>
 </div>
+{%- endif -%}
 
 {% schema %}
 {
