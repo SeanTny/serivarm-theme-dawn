@@ -89,7 +89,7 @@
           "settings": {
             "heading": "{{ product.metafields.custom.custom_info_01_title.value }}",
             "icon": "none",
-            "content": "{{ product.metafields.custom.custom_info_01_content | metafield_tag }}",
+            "content": "<p>{{ product.metafields.custom.custom_info_01_content | metafield_tag }}</p>",
             "page": "",
             "image": "{{ product.metafields.custom.custom_info_01_img.value }}"
           }
@@ -100,7 +100,8 @@
             "heading": "{{ product.metafields.custom.custom_info_02_title.value }}",
             "icon": "none",
             "content": "{{ product.metafields.custom.custom_info_02_content | metafield_tag }}",
-            "page": ""
+            "page": "",
+            "image": "{{ product.metafields.custom.custom_info_02_img.value }}"
           }
         },
         "collapsible_tab_aMCiWX": {
@@ -109,7 +110,8 @@
             "heading": "{{ product.metafields.custom.custom_info_03_title.value }}",
             "icon": "none",
             "content": "{{ product.metafields.custom.custom_info_03_content | metafield_tag }}",
-            "page": ""
+            "page": "",
+            "image": "{{ product.metafields.custom.custom_info_03_img.value }}"
           }
         },
         "collapsible_tab_qXte7U": {
@@ -118,7 +120,8 @@
             "heading": "{{ product.metafields.custom.custom_info_04_title.value }}",
             "icon": "none",
             "content": "{{ product.metafields.custom.custom_info_04_content | metafield_tag }}",
-            "page": ""
+            "page": "",
+            "image": "{{ product.metafields.custom.custom_info_04_img.value }}"
           }
         },
         "collapsible_tab_69ifWy": {
