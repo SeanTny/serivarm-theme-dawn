@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "settings_schema": {
     "global": {
@@ -2054,6 +2063,9 @@
             "page": {
               "label": "Row content from page"
             },
+            "image": {
+              "label": "Image"
+            },
             "icon": {
               "label": "Icon",
               "options__1": {
@@ -2266,6 +2278,18 @@
               },
               "options__2": {
                 "label": "Vertical"
+              }
+            },
+            "icon_size": {
+              "label": "Icon size",
+              "options__1": {
+                "label": "Small"
+              },
+              "options__2": {
+                "label": "Medium"
+              },
+              "options__3": {
+                "label": "Large"
               }
             },
             "pairing_1": {

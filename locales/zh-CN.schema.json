@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "settings_schema": {
     "colors": {
@@ -1694,6 +1703,9 @@
             "page": {
               "label": "页面中的行内容"
             },
+            "image": {
+              "label": "图片"
+            },
             "icon": {
               "label": "图标",
               "options__1": {
@@ -1922,6 +1934,18 @@
               },
               "options__2": {
                 "label": "垂直"
+              }
+            },
+            "icon_size": {
+              "label": "图标大小",
+              "options__1": {
+                "label": "小"
+              },
+              "options__2": {
+                "label": "中"
+              },
+              "options__3": {
+                "label": "大"
               }
             },
             "heading": {
