@@ -431,6 +431,9 @@
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        ".related-products__heading {text-align: center;}"
+      ],
       "settings": {
         "heading": "&nbsp;You may also like &nbsp;",
         "heading_size": "h2",
