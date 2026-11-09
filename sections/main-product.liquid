@@ -213,7 +213,7 @@
                   </div>
                 {%- when 'inventory' -%}
                   <p
-                    class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}{% if block.settings.alignment == 'right' %} right{% elsif block.settings.alignment == 'left' %} left{% else %} center{% endif %}"
+                    class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
                     {{ block.shopify_attributes }}
                     id="Inventory-{{ section.id }}"
                     role="status"
@@ -956,26 +956,6 @@
       "settings": [
         {
           "type": "select",
-          "id": "alignment",
-          "options": [
-            {
-              "value": "left",
-              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__1.label"
-            },
-            {
-              "value": "center",
-              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__2.label"
-            },
-            {
-              "value": "right",
-              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__3.label"
-            }
-          ],
-          "default": "center",
-          "label": "t:sections.image-with-text.settings.desktop_content_alignment.label"
-        },
-        {
-          "type": "select",
           "id": "text_style",
           "options": [
             {
@@ -1684,26 +1664,6 @@
           ],
           "default": "horizontal",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.layout.label"
-        },
-        {
-          "type": "select",
-          "id": "icon_size",
-          "options": [
-            {
-              "value": "small",
-              "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_size.options__1.label"
-            },
-            {
-              "value": "medium",
-              "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_size.options__2.label"
-            },
-            {
-              "value": "large",
-              "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_size.options__3.label"
-            }
-          ],
-          "default": "medium",
-          "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_size.label"
         },
         {
           "type": "header",
