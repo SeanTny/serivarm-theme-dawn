@@ -213,7 +213,7 @@
                   </div>
                 {%- when 'inventory' -%}
                   <p
-                    class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
+                    class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}{% if block.settings.alignment == 'right' %} right{% elsif block.settings.alignment == 'left' %} left{% else %} center{% endif %}"
                     {{ block.shopify_attributes }}
                     id="Inventory-{{ section.id }}"
                     role="status"
@@ -281,30 +281,33 @@
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'collapsible_tab' -%}
-                  <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
-                    <details id="Details-{{ block.id }}-{{ section.id }}">
-                      <summary>
-                        <div class="summary__title">
-                          {% render 'icon-accordion', icon: block.settings.icon %}
-                          <h2 class="h4 accordion__title inline-richtext">
-                            {{ block.settings.heading | default: block.settings.page.title | escape }}
-                          </h2>
+                  {%- assign accordion_title = block.settings.heading | default: block.settings.page.title | strip -%}
+                  {%- if accordion_title != blank -%}
+                    <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                      <details id="Details-{{ block.id }}-{{ section.id }}">
+                        <summary>
+                          <div class="summary__title">
+                            {% render 'icon-accordion', icon: block.settings.icon %}
+                            <h2 class="h4 accordion__title inline-richtext">
+                              {{ accordion_title | escape }}
+                            </h2>
+                          </div>
+                          {{- 'icon-caret.svg' | inline_asset_content -}}
+                        </summary>
+                        <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                          {{ block.settings.content }}
+                          {{ block.settings.page.content }}
+                          {%- if block.settings.image != blank -%}
+                            {{
+                              block.settings.image
+                              | image_url: width: 1200
+                              | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 750px, 100vw', widths: '375, 550, 750, 1100, 1200'
+                            }}
+                          {%- endif -%}
                         </div>
-                        {{- 'icon-caret.svg' | inline_asset_content -}}
-                      </summary>
-                      <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                        {{ block.settings.content }}
-                        {{ block.settings.page.content }}
-                        {%- if block.settings.image != blank -%}
-                          {{
-                            block.settings.image
-                            | image_url: width: 1200
-                            | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 750px, 100vw', widths: '375, 550, 750, 1100, 1200'
-                          }}
-                        {%- endif -%}
-                      </div>
-                    </details>
-                  </div>
+                      </details>
+                    </div>
+                  {%- endif -%}
                 {%- when 'quantity_selector' -%}
                   <div
                     id="Quantity-Form-{{ section.id }}"
@@ -954,6 +957,26 @@
       "name": "t:sections.main-product.blocks.inventory.name",
       "limit": 1,
       "settings": [
+        {
+          "type": "select",
+          "id": "alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__3.label"
+            }
+          ],
+          "default": "center",
+          "label": "t:sections.image-with-text.settings.desktop_content_alignment.label"
+        },
         {
           "type": "select",
           "id": "text_style",
@@ -1664,6 +1687,26 @@
           ],
           "default": "horizontal",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.layout.label"
+        },
+        {
+          "type": "select",
+          "id": "icon_size",
+          "options": [
+            {
+              "value": "small",
+              "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_size.options__1.label"
+            },
+            {
+              "value": "medium",
+              "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_size.options__2.label"
+            },
+            {
+              "value": "large",
+              "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_size.options__3.label"
+            }
+          ],
+          "default": "medium",
+          "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_size.label"
         },
         {
           "type": "header",
