@@ -171,49 +171,6 @@
         "padding_bottom": 20
       }
     },
-    "1794213973dc542bfd": {
-      "type": "apps",
-      "blocks": {
-        "super_video_ugc_video_slide_big_oneplay_tGeREx": {
-          "type": "shopify://apps/super-video-ugc/blocks/video_slide_big_oneplay/2721aaf8-cc8e-48db-a5ff-caf1f1abfc5c",
-          "settings": {
-            "title": "Video slide big oneplay",
-            "subheading": "",
-            "text_alignment": "center",
-            "heading_size": 20,
-            "subheading_size": 12,
-            "item_size": "5/3",
-            "desktop_item": "1.6",
-            "mobile_item": "1.4",
-            "video_layout": "center",
-            "content_position": "middle_center",
-            "spacing": 10,
-            "radius": 8,
-            "slide_autoplay": false,
-            "video_title_1": "This is Video",
-            "video_content_1": "Tell your story",
-            "video_hosted_2": "shopify://files/videos/视频-1.mp4",
-            "video_title_2": "This is Video",
-            "video_content_2": "Tell your story",
-            "video_title_3": "This is Video",
-            "video_content_3": "Tell your story",
-            "video_title_4": "This is Video",
-            "video_content_4": "Tell your story",
-            "video_title_5": "This is Video",
-            "video_content_5": "Tell your story",
-            "video_title_6": "This is Video",
-            "video_content_6": "Tell your story"
-          }
-        }
-      },
-      "block_order": [
-        "super_video_ugc_video_slide_big_oneplay_tGeREx"
-      ],
-      "custom_css": [],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "image_with_text_hhVm3B": {
       "type": "image-with-text",
       "blocks": {
@@ -493,7 +450,6 @@
   },
   "order": [
     "main",
-    "1794213973dc542bfd",
     "image_with_text_hhVm3B",
     "image_with_text_LVHhfN",
     "image_with_text_WpNkpQ",
