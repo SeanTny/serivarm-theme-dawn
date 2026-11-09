@@ -130,7 +130,8 @@
             "heading": "Delivery Time",
             "icon": "none",
             "content": "<p>Most orders arrive within <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_total.value }}</strong></p>",
-            "page": ""
+            "page": "",
+            "image": "{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].time_table.value }}"
           }
         }
       },
