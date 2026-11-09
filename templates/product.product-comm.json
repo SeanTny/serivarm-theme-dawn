@@ -89,8 +89,9 @@
           "settings": {
             "heading": "{{ product.metafields.custom.custom_info_01_title.value }}",
             "icon": "none",
-            "content": "<p>{{ product.metafields.custom.custom_info_01_content | metafield_tag }}</p>",
-            "page": ""
+            "content": "{{ product.metafields.custom.custom_info_01_content | metafield_tag }}",
+            "page": "",
+            "image": "{{ product.metafields.custom.custom_info_01_img.value }}"
           }
         },
         "collapsible_tab_r9qyVz": {
