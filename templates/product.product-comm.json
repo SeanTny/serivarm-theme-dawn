@@ -414,7 +414,7 @@
             "reviews_to_display": "product_reviews_only",
             "default_tab": "automatic",
             "only_photos": false,
-            "aggregated": true,
+            "aggregated": false,
             "limit": 2,
             "hide_thumbnails": false,
             "maxwidth": 1400,
