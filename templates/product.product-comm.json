@@ -65,13 +65,10 @@
           "settings": {
             "layout": "horizontal",
             "icon_1": "truck",
-            "image_1": "shopify://shop_images/ui-icon-shipping-plane.svg",
             "heading_1": "Free US Shipping",
             "icon_2": "return",
-            "image_2": "shopify://shop_images/ui-icon-return-arrow.svg",
             "heading_2": "{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].return.value }} Returns",
             "icon_3": "box",
-            "image_3": "shopify://shop_images/ui-icon-order-tracking.svg",
             "heading_3": "Order Tracking"
           }
         },
