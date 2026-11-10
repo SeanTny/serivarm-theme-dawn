@@ -347,14 +347,14 @@
         "loox_reviews_loox_dynamic_section_rdUBTK"
       ],
       "settings": {
-        "include_margins": false
+        "include_margins": true
       }
     },
     "custom_liquid_Qt4MHf": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<div class=\"page-width\">\n\t<hr style=\"\n\t  border: none;\n\t  height: 1px;\n\t  background-color: rgba(var(--color-foreground), 0.12);\n\t  margin: 0rem 0;\n\t\">\n</div>",
+        "custom_liquid": "<hr style=\"\n  border: none;\n  height: 1px;\n  background-color: rgba(var(--color-foreground), 0.12);\n  margin: 0rem 0;\n\">",
         "color_scheme": "scheme-4",
         "padding_top": 0,
         "padding_bottom": 0
@@ -371,7 +371,7 @@
         "products_to_show": 2,
         "columns_desktop": 4,
         "columns_mobile": "2",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
