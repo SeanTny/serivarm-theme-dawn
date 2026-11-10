@@ -198,8 +198,8 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 32,
+        "padding_bottom": 0
       }
     },
     "image_with_text_hhVm3B": {
