@@ -202,70 +202,23 @@
         "padding_bottom": 0
       }
     },
-    "image_with_text_hhVm3B": {
+    "image_with_text_xjaAnt": {
       "type": "image-with-text",
       "blocks": {
-        "heading_kam8UK": {
-          "type": "heading",
-          "settings": {
-            "heading": "Built for Everyday Movement",
-            "heading_size": "h2"
-          }
-        },
-        "text_GtPXMg": {
+        "text_xCDRaN": {
           "type": "text",
           "settings": {
-            "text": "<p>Comfortable against your body, designed for daily commutes and city movement.</p>",
+            "text": "{{ product.metafields.custom.detail_text | metafield_tag }}",
             "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_kam8UK",
-        "text_GtPXMg"
+        "text_xCDRaN"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/product-flow-detail-17.avif",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "center",
-        "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 32,
-        "padding_bottom": 0
-      }
-    },
-    "image_with_text_LVHhfN": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_TCUD4Y": {
-          "type": "heading",
-          "settings": {
-            "heading": "Slim Profile, Spacious Interior",
-            "heading_size": "h2"
-          }
-        },
-        "text_pieg6c": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Compact outside, with enough room for your everyday essentials.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_TCUD4Y",
-        "text_pieg6c"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/product-flow-detail-capacity-10.avif",
+        "image": "{{ product.metafields.custom.detail01_img.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -276,35 +229,27 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 12,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "image_with_text_WpNkpQ": {
+    "image_with_text_crcPWE": {
       "type": "image-with-text",
       "blocks": {
-        "heading_6gbHUN": {
-          "type": "heading",
-          "settings": {
-            "heading": "Organized Compartments, Easy Access",
-            "heading_size": "h2"
-          }
-        },
-        "text_mK6cQP": {
+        "text_fWnaXL": {
           "type": "text",
           "settings": {
-            "text": "<p>Separate pockets keep your essentials organized and easy to find.</p>",
+            "text": "{{ product.metafields.custom.detail_text | metafield_tag }}",
             "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_6gbHUN",
-        "text_mK6cQP"
+        "text_fWnaXL"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/product-flow-detail-organized-compartments.avif",
+        "image": "{{ product.metafields.custom.detail01_img.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -315,35 +260,27 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 12,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "image_with_text_NDQWnd": {
+    "image_with_text_kC9fAL": {
       "type": "image-with-text",
       "blocks": {
-        "heading_DiiNPP": {
-          "type": "heading",
-          "settings": {
-            "heading": "Quick-Release Buckle, Easy Carry",
-            "heading_size": "h2"
-          }
-        },
-        "text_GPRd9g": {
+        "text_p3YzaE": {
           "type": "text",
           "settings": {
-            "text": "<p>A practical buckle system makes everyday carrying simple and convenient.</p>",
+            "text": "{{ product.metafields.custom.detail_text | metafield_tag }}",
             "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_DiiNPP",
-        "text_GPRd9g"
+        "text_p3YzaE"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/product-flow-detail-quick-release.avif",
+        "image": "{{ product.metafields.custom.detail01_img.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -354,35 +291,27 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 12,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "image_with_text_RXhpkj": {
+    "image_with_text_nUMFgH": {
       "type": "image-with-text",
       "blocks": {
-        "heading_fADtHB": {
-          "type": "heading",
-          "settings": {
-            "heading": "Ready for Travel and Daily Commutes",
-            "heading_size": "h2"
-          }
-        },
-        "text_BmytRA": {
+        "text_ibyh4E": {
           "type": "text",
           "settings": {
-            "text": "<p>Built to move with you from workdays to weekend trips.</p>",
+            "text": "{{ product.metafields.custom.detail_text | metafield_tag }}",
             "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_fADtHB",
-        "text_BmytRA"
+        "text_ibyh4E"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/product-flow-detail-ready-travel.avif",
+        "image": "{{ product.metafields.custom.detail01_img.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -393,47 +322,8 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 12,
+        "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "image_with_text_jH8jhh": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_BVkpkp": {
-          "type": "heading",
-          "settings": {
-            "heading": "Durable Protection for Everyday Use",
-            "heading_size": "h2"
-          }
-        },
-        "text_bDC7bG": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Water-resistant and scratch-resistant fabric helps protect your essentials.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_BVkpkp",
-        "text_bDC7bG"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/product-flow-main-03.avif",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "center",
-        "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 12,
-        "padding_bottom": 32
       }
     },
     "17758828891ce92bc4": {
@@ -485,12 +375,10 @@
   "order": [
     "main",
     "image_with_text_RnFQTf",
-    "image_with_text_hhVm3B",
-    "image_with_text_LVHhfN",
-    "image_with_text_WpNkpQ",
-    "image_with_text_NDQWnd",
-    "image_with_text_RXhpkj",
-    "image_with_text_jH8jhh",
+    "image_with_text_xjaAnt",
+    "image_with_text_crcPWE",
+    "image_with_text_kC9fAL",
+    "image_with_text_nUMFgH",
     "17758828891ce92bc4",
     "related-products"
   ]
