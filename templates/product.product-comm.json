@@ -65,7 +65,7 @@
           "type": "icon-with-text",
           "settings": {
             "layout": "horizontal",
-            "icon_1": "truck",
+            "icon_1": "plane",
             "heading_1": "Free US Shipping",
             "icon_2": "return",
             "heading_2": "{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].return.value }} Returns",
