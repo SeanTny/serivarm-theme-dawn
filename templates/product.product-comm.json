@@ -208,7 +208,7 @@
         "text_xCDRaN": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.detail_text | metafield_tag }}",
+            "text": "{{ product.metafields.custom.detail02_text | metafield_tag }}",
             "text_style": "body"
           }
         }
@@ -218,7 +218,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "{{ product.metafields.custom.detail01_img.value }}",
+        "image": "{{ product.metafields.custom.detail02_img.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -239,7 +239,7 @@
         "text_fWnaXL": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.detail_text | metafield_tag }}",
+            "text": "{{ product.metafields.custom.detail03_text | metafield_tag }}",
             "text_style": "body"
           }
         }
@@ -249,7 +249,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "{{ product.metafields.custom.detail01_img.value }}",
+        "image": "{{ product.metafields.custom.detail03_img.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -270,7 +270,7 @@
         "text_p3YzaE": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.detail_text | metafield_tag }}",
+            "text": "{{ product.metafields.custom.detail04_text | metafield_tag }}",
             "text_style": "body"
           }
         }
@@ -280,7 +280,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "{{ product.metafields.custom.detail01_img.value }}",
+        "image": "{{ product.metafields.custom.detail04_img.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -301,7 +301,7 @@
         "text_ibyh4E": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.detail_text | metafield_tag }}",
+            "text": "{{ product.metafields.custom.detail05_text | metafield_tag }}",
             "text_style": "body"
           }
         }
@@ -311,7 +311,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "{{ product.metafields.custom.detail01_img.value }}",
+        "image": "{{ product.metafields.custom.detail05_img.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
