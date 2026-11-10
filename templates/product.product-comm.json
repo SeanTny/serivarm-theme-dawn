@@ -89,7 +89,7 @@
           "settings": {
             "heading": "{{ product.metafields.custom.custom_info_01_title.value }}",
             "icon": "none",
-            "content": "<p>{{ product.metafields.custom.custom_info_01_content | metafield_tag }}</p>",
+            "content": "{{ product.metafields.custom.custom_info_01_content | metafield_tag }}",
             "page": "",
             "image": "{{ product.metafields.custom.custom_info_01_img.value }}"
           }
@@ -198,7 +198,7 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 0,
+        "padding_top": 16,
         "padding_bottom": 0
       }
     },
