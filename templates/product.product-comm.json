@@ -311,6 +311,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "{{ product.metafields.custom.detail01_img.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
