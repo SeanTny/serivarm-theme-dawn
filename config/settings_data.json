@@ -289,7 +289,7 @@
           "background_gradient": "",
           "text": "#f3f3f3",
           "button": "#f2f1ec",
-          "button_label": "#f2f1ec",
+          "button_label": "#121212",
           "secondary_button_label": "#ffffff",
           "shadow": "#303532"
         }
