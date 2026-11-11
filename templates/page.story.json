@@ -78,7 +78,7 @@
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-1",
-        "full_width": false,
+        "full_width": true,
         "padding_top": 52,
         "padding_bottom": 52
       }
@@ -95,6 +95,7 @@
         },
         "text_VqtX6r": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p><br/>Every product has to earn its place.</p>"
           }
@@ -163,9 +164,9 @@
         "background_style": "primary",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 80
+        "padding_bottom": 20
       }
     },
     "rich_text_mmDf8q": {
@@ -186,9 +187,9 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "full_width": true,
-        "padding_top": 52,
+        "padding_top": 20,
         "padding_bottom": 20
       }
     },
@@ -234,8 +235,8 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
         "mobile_content_alignment": "center",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-1",
+        "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
+        "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "padding_top": 20,
         "padding_bottom": 20
       }
@@ -268,7 +269,7 @@
         "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 52,
-        "padding_bottom": 52
+        "padding_bottom": 40
       }
     }
   },
