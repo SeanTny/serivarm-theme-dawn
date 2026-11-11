@@ -79,7 +79,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 100,
+        "padding_top": 52,
         "padding_bottom": 20
       }
     },
@@ -90,7 +90,31 @@
         "heading_size": "h1",
         "color_scheme": "scheme-1",
         "padding_top": 0,
-        "padding_bottom": 100
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_RTkAbW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_d8cxFn": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;Quick Answers&nbsp;",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_d8cxFn"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 0
       }
     },
     "multicolumn_XYqRht": {
@@ -161,7 +185,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Quick Answers",
+        "title": "",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -172,8 +196,8 @@
         "background_style": "primary",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 80,
+        "swipe_on_mobile": true,
+        "padding_top": 32,
         "padding_bottom": 0
       }
     },
@@ -215,6 +239,7 @@
     "image_banner_8pMBed",
     "rich_text_6PqBEJ",
     "form",
+    "rich_text_RTkAbW",
     "multicolumn_XYqRht",
     "rich_text_RQbbkX"
   ]
