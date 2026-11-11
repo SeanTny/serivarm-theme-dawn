@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "&nbsp;Useful Gear for Everyday Life",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_MUVagi": {
@@ -65,7 +65,7 @@
           "type": "heading",
           "settings": {
             "heading": "&nbsp;Designed with Purpose&nbsp;",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         }
       },
