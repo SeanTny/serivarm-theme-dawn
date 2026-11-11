@@ -229,7 +229,7 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 0,
+        "padding_top": 16,
         "padding_bottom": 0
       }
     },
@@ -260,7 +260,7 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 0,
+        "padding_top": 16,
         "padding_bottom": 0
       }
     },
@@ -291,7 +291,7 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 0,
+        "padding_top": 16,
         "padding_bottom": 0
       }
     },
@@ -322,8 +322,8 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 0,
-        "padding_bottom": 16
+        "padding_top": 16,
+        "padding_bottom": 0
       }
     },
     "image_with_text_YfxdEb": {
@@ -353,8 +353,8 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
         "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
-        "padding_top": 0,
-        "padding_bottom": 16
+        "padding_top": 16,
+        "padding_bottom": 0
       }
     },
     "17758828891ce92bc4": {
