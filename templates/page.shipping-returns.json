@@ -1,540 +1,549 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "main": {
-            "type": "main-page",
-            "disabled": true,
-            "settings": {
-                "padding_top": 28,
-                "padding_bottom": 28
-            }
-        },
-        "image_banner_wrM4zF": {
-            "type": "image-banner",
-            "blocks": {
-                "heading_CGR93U": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "Shipping & Returns",
-                        "heading_size": "h1"
-                    }
-                },
-                "text_jRbjbx": {
-                    "type": "text",
-                    "settings": {
-                        "text": "Simple, transparent shipping and hassle-free returns.",
-                        "text_style": "subtitle"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_CGR93U",
-                "text_jRbjbx"
-            ],
-            "settings": {
-                "image": "shopify:\/\/shop_images\/page-hero-background-soft-white.jpg",
-                "image_overlay_opacity": 0,
-                "image_height": "small",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": false,
-                "color_scheme": "scheme-1",
-                "stack_images_on_mobile": false,
-                "mobile_content_alignment": "center",
-                "show_text_below": false
-            }
-        },
-        "rich_text_AkL7GL": {
-            "type": "rich-text",
-            "blocks": {
-                "text_L44FMU": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<h1>Delivery Timeline<\/h1>"
-                    }
-                }
-            },
-            "block_order": [
-                "text_L44FMU"
-            ],
-            "name": "Delivery Timeline",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "scheme-1",
-                "full_width": true,
-                "padding_top": 100,
-                "padding_bottom": 0
-            }
-        },
-        "multicolumn_hgKWQp": {
-            "type": "multicolumn",
-            "blocks": {
-                "column_CNa3Di": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/ui-icon-order-confirm-001.svg",
-                        "title": "Order Confirmed",
-                        "text": "<p>Order placed.<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_WwaxJx": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/ui-icon-order-process-002.svg",
-                        "title": "Processing",
-                        "text": "<p>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_processing.value }}<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_BXJMp8": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/ui-icon-order-transit-004.svg",
-                        "title": "In Transit",
-                        "text": "<p>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_transit.value }}<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_x3ChFQ": {
-                    "type": "column",
-                    "settings": {
-                        "image": "shopify:\/\/shop_images\/ui-icon-order-deliverd-003.svg",
-                        "title": "Delivered",
-                        "text": "<p>Enjoy your Serivarm.<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                }
-            },
-            "block_order": [
-                "column_CNa3Di",
-                "column_WwaxJx",
-                "column_BXJMp8",
-                "column_x3ChFQ"
-            ],
-            "name": "t:sections.multicolumn.presets.name",
-            "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "third",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 4,
-                "column_alignment": "center",
-                "background_style": "none",
-                "color_scheme": "scheme-1",
-                "columns_mobile": "2",
-                "swipe_on_mobile": false,
-                "padding_top": 36,
-                "padding_bottom": 60
-            }
-        },
-        "rich_text_VriNmy": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_QAEwqY": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "Good to Know",
-                        "heading_size": "h1"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_QAEwqY"
-            ],
-            "name": "Shipping",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "scheme-2",
-                "full_width": true,
-                "padding_top": 60,
-                "padding_bottom": 0
-            }
-        },
-        "multicolumn_Y7ApYn": {
-            "type": "multicolumn",
-            "blocks": {
-                "column_47KPYy": {
-                    "type": "column",
-                    "settings": {
-                        "title": "<strong>Shipping<\/strong>",
-                        "text": "<p>In total, {{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_total.value }}<\/p><p><a href=\"https:\/\/serivarm.com\/apps\/track-order\" title=\"https:\/\/serivarm.com\/apps\/track-order\">Tracking Included<\/a><br\/><\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_wtmQrQ": {
-                    "type": "column",
-                    "settings": {
-                        "title": "<strong>Returns<\/strong>",
-                        "text": "<p>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].return.value }} Returns<br\/><a href=\"\/pages\/contact\" title=\"Contact Serivarm | Get in Touch\">Contact us<\/a> to start a return<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                }
-            },
-            "block_order": [
-                "column_47KPYy",
-                "column_wtmQrQ"
-            ],
-            "name": "t:sections.multicolumn.presets.name",
-            "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "third",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 2,
-                "column_alignment": "center",
-                "background_style": "none",
-                "color_scheme": "scheme-2",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
-                "padding_top": 40,
-                "padding_bottom": 40
-            }
-        },
-        "multicolumn_pTDW6f": {
-            "type": "multicolumn",
-            "blocks": {
-                "column_nNRhMf": {
-                    "type": "column",
-                    "settings": {
-                        "title": "Quick Dispatch",
-                        "text": "<p>Fast, reliable order processing.<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_mzmJcQ": {
-                    "type": "column",
-                    "settings": {
-                        "title": "Track Every Step",
-                        "text": "<p>Stay updated from shipment to arrival.<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_i6VwVd": {
-                    "type": "column",
-                    "settings": {
-                        "title": "U.S. Delivery",
-                        "text": "<p>Reliable delivery across the United States.<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                }
-            },
-            "block_order": [
-                "column_nNRhMf",
-                "column_mzmJcQ",
-                "column_i6VwVd"
-            ],
-            "disabled": true,
-            "name": "t:sections.multicolumn.presets.name",
-            "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "third",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 3,
-                "column_alignment": "left",
-                "background_style": "none",
-                "color_scheme": "scheme-2",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
-                "padding_top": 20,
-                "padding_bottom": 12
-            }
-        },
-        "rich_text_hjqr4c": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_RAyTWE": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "Returns",
-                        "heading_size": "h1"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_RAyTWE"
-            ],
-            "disabled": true,
-            "name": "Returns",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "scheme-2",
-                "full_width": true,
-                "padding_top": 12,
-                "padding_bottom": 0
-            }
-        },
-        "multicolumn_Tey8bM": {
-            "type": "multicolumn",
-            "blocks": {
-                "column_VaREzb": {
-                    "type": "column",
-                    "settings": {
-                        "title": "{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].return.value }} Return",
-                        "text": "<p>Take your time. Returns are simple.<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_CBzAiV": {
-                    "type": "column",
-                    "settings": {
-                        "title": "Simple Support",
-                        "text": "<p>We're here if you need help.<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_bikztz": {
-                    "type": "column",
-                    "settings": {
-                        "title": "Easy Process",
-                        "text": "<p>A straightforward return experience.<\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                }
-            },
-            "block_order": [
-                "column_VaREzb",
-                "column_CBzAiV",
-                "column_bikztz"
-            ],
-            "disabled": true,
-            "name": "t:sections.multicolumn.presets.name",
-            "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "full",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 3,
-                "column_alignment": "left",
-                "background_style": "none",
-                "color_scheme": "scheme-2",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
-                "padding_top": 20,
-                "padding_bottom": 60
-            }
-        },
-        "collapsible_content_dEazHG": {
-            "type": "collapsible-content",
-            "blocks": {
-                "collapsible_row_HddbNf": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "When will I receive my tracking number?",
-                        "icon": "check_mark",
-                        "row_content": "<p><\/p><p>Your tracking number will be sent by email once your order ships. You can track your package on our <a href=\"https:\/\/serivarm.com\/apps\/track-order\" title=\"https:\/\/serivarm.com\/apps\/track-order\">Track Order<\/a> page.<\/p><p><\/p>",
-                        "page": ""
-                    }
-                },
-                "collapsible_row_NHNgn8": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "How long does shipping take?",
-                        "icon": "check_mark",
-                        "row_content": "<p><\/p><p>Orders are processed within <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_processing.value }}<\/strong>. After shipment, delivery typically takes <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_transit.value }}<\/strong> within the United States. In total, most orders arrive within <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_total.value }}<\/strong>.<\/p>",
-                        "page": ""
-                    }
-                },
-                "collapsible_row_CFbnfU": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "How do I start a return?",
-                        "icon": "check_mark",
-                        "row_content": "<p><br\/>Simply contact our support team with your order number. We'll guide you through the return process. Email:<a href=\"mailto:support@serivarm.com\">support@serivarm.com<\/a>.<\/p><p><\/p>",
-                        "page": ""
-                    }
-                },
-                "collapsible_row_N9wLNc": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "What is your return policy?",
-                        "icon": "check_mark",
-                        "row_content": "<p><br\/>You may request a return within <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].return.value }}<\/strong> of receiving your order, provided the item meets our return requirements. <a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"Refund Policy\">refund-policy<\/a><\/p><p><\/p>",
-                        "page": ""
-                    }
-                },
-                "collapsible_row_VXpL3n": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "Do you ship across the United States?",
-                        "icon": "check_mark",
-                        "row_content": "<p><br\/>Yes. We currently ship throughout the United States.<\/p><p><\/p>",
-                        "page": ""
-                    }
-                },
-                "collapsible_row_iFgnnV": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "Who pays for return shipping?",
-                        "icon": "check_mark",
-                        "row_content": "<p><br\/>If the return is due to a product defect or an order error, we'll make it right. For other returns, return shipping may be the customer's responsibility.<\/p><p><\/p>",
-                        "page": ""
-                    }
-                },
-                "collapsible_row_btzCgC": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "What if my order arrives damaged?",
-                        "icon": "check_mark",
-                        "row_content": "<p><br\/>Please contact us as soon as possible and include photos of the item and packaging. We'll work with you to resolve the issue quickly.<\/p><p><\/p>",
-                        "page": ""
-                    }
-                },
-                "collapsible_row_ry7dHJ": {
-                    "type": "collapsible_row",
-                    "settings": {
-                        "heading": "How can I contact support?",
-                        "icon": "check_mark",
-                        "row_content": "<p><br\/>If you have any questions about your order, shipping, or returns, contact us anytime. We're happy to help.  Email:<a href=\"mailto:support@serivarm.com\">support@serivarm.com<\/a>.<\/p><p><\/p>",
-                        "page": ""
-                    }
-                }
-            },
-            "block_order": [
-                "collapsible_row_HddbNf",
-                "collapsible_row_NHNgn8",
-                "collapsible_row_CFbnfU",
-                "collapsible_row_N9wLNc",
-                "collapsible_row_VXpL3n",
-                "collapsible_row_iFgnnV",
-                "collapsible_row_btzCgC",
-                "collapsible_row_ry7dHJ"
-            ],
-            "name": "FAQ",
-            "settings": {
-                "caption": "",
-                "heading": "FAQ",
-                "heading_size": "h1",
-                "heading_alignment": "center",
-                "layout": "none",
-                "container_color_scheme": "scheme-1",
-                "color_scheme": "scheme-1",
-                "open_first_collapsible_row": true,
-                "image_ratio": "adapt",
-                "desktop_layout": "image_first",
-                "padding_top": 60,
-                "padding_bottom": 52
-            }
-        },
-        "rich_text_wEQ97P": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_AzqMMb": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "Have questions?",
-                        "heading_size": "h1"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_AzqMMb"
-            ],
-            "name": "Still have questions?",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "scheme-2",
-                "full_width": true,
-                "padding_top": 60,
-                "padding_bottom": 0
-            }
-        },
-        "contact_form_MdWVHR": {
-            "type": "contact-form",
-            "name": "t:sections.contact-form.presets.name",
-            "settings": {
-                "heading": "Contact our support team anytime.",
-                "heading_size": "h2",
-                "color_scheme": "scheme-2",
-                "padding_top": 36,
-                "padding_bottom": 100
-            }
-        },
-        "1782812336b502883f": {
-            "type": "_blocks",
-            "disabled": true,
-            "settings": {}
-        },
-        "178281252013781b85": {
-            "type": "_blocks",
-            "blocks": {
-                "ai_gen_block_69d1d50_UWQLdK": {
-                    "type": "ai_gen_block_69d1d50",
-                    "settings": {
-                        "title": "配送时间线",
-                        "title_size": 20,
-                        "title_color": "#121212",
-                        "text_alignment": "left",
-                        "step_1_title": "处理中",
-                        "step_1_description": "1–2 个工作日",
-                        "step_2_title": "配送中",
-                        "step_2_description": "5–10 个工作日",
-                        "step_3_title": "已送达",
-                        "step_3_description": "享受您的 Serivarm",
-                        "card_background": "#ffffff",
-                        "card_border_radius": 8,
-                        "card_padding": 32,
-                        "desktop_width_percent": 100,
-                        "icon_size": 48,
-                        "icon_background": "#121212",
-                        "icon_color": "#ffffff",
-                        "connector_color": "#e0e0e0",
-                        "icon_text_gap": 16,
-                        "step_title_size": 16,
-                        "step_title_color": "#121212",
-                        "step_description_size": 14,
-                        "step_description_color": "#666666",
-                        "spacing_between_items": 32
-                    },
-                    "blocks": {}
-                }
-            },
-            "block_order": [
-                "ai_gen_block_69d1d50_UWQLdK"
-            ],
-            "disabled": true,
-            "settings": {}
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
     },
-    "order": [
-        "main",
-        "image_banner_wrM4zF",
-        "rich_text_AkL7GL",
-        "multicolumn_hgKWQp",
-        "rich_text_VriNmy",
-        "multicolumn_Y7ApYn",
-        "multicolumn_pTDW6f",
-        "rich_text_hjqr4c",
-        "multicolumn_Tey8bM",
-        "collapsible_content_dEazHG",
-        "rich_text_wEQ97P",
-        "contact_form_MdWVHR",
-        "1782812336b502883f",
-        "178281252013781b85"
-    ]
+    "image_banner_wrM4zF": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_CGR93U": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "heading_size": "h1"
+          }
+        },
+        "text_jRbjbx": {
+          "type": "text",
+          "settings": {
+            "text": "Simple, transparent shipping and hassle-free returns.",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CGR93U",
+        "text_jRbjbx"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/page-hero-background-soft-white.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-1",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "rich_text_AkL7GL": {
+      "type": "rich-text",
+      "blocks": {
+        "text_L44FMU": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Delivery Timeline</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "text_L44FMU"
+      ],
+      "name": "Delivery Timeline",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_hgKWQp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_CNa3Di": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ui-icon-order-confirm-001.svg",
+            "title": "Order Confirmed",
+            "text": "<p>Order placed.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WwaxJx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ui-icon-order-process-002.svg",
+            "title": "Processing",
+            "text": "<p>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_processing.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BXJMp8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ui-icon-order-transit-004.svg",
+            "title": "In Transit",
+            "text": "<p>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_transit.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_x3ChFQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ui-icon-order-deliverd-003.svg",
+            "title": "Delivered",
+            "text": "<p>Enjoy your Serivarm.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CNa3Di",
+        "column_WwaxJx",
+        "column_BXJMp8",
+        "column_x3ChFQ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 60
+      }
+    },
+    "rich_text_VriNmy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QAEwqY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Good to Know",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QAEwqY"
+      ],
+      "name": "Shipping",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_Y7ApYn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_47KPYy": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Shipping</strong>",
+            "text": "<p>In total, {{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_total.value }}</p><p><a href=\"https://serivarm.com/apps/track-order\" title=\"https://serivarm.com/apps/track-order\">Tracking Included</a><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wtmQrQ": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Returns</strong>",
+            "text": "<p>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].return.value }} Returns<br/><a href=\"/pages/contact\" title=\"Contact Serivarm | Get in Touch\">Contact us</a> to start a return</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_47KPYy",
+        "column_wtmQrQ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "multicolumn_pTDW6f": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nNRhMf": {
+          "type": "column",
+          "settings": {
+            "title": "Quick Dispatch",
+            "text": "<p>Fast, reliable order processing.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mzmJcQ": {
+          "type": "column",
+          "settings": {
+            "title": "Track Every Step",
+            "text": "<p>Stay updated from shipment to arrival.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_i6VwVd": {
+          "type": "column",
+          "settings": {
+            "title": "U.S. Delivery",
+            "text": "<p>Reliable delivery across the United States.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_nNRhMf",
+        "column_mzmJcQ",
+        "column_i6VwVd"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text_hjqr4c": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RAyTWE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Returns",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RAyTWE"
+      ],
+      "disabled": true,
+      "name": "Returns",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_Tey8bM": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_VaREzb": {
+          "type": "column",
+          "settings": {
+            "title": "{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].return.value }} Return",
+            "text": "<p>Take your time. Returns are simple.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_CBzAiV": {
+          "type": "column",
+          "settings": {
+            "title": "Simple Support",
+            "text": "<p>We're here if you need help.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_bikztz": {
+          "type": "column",
+          "settings": {
+            "title": "Easy Process",
+            "text": "<p>A straightforward return experience.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_VaREzb",
+        "column_CBzAiV",
+        "column_bikztz"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
+    "collapsible_content_dEazHG": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_HddbNf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When will I receive my tracking number?",
+            "icon": "check_mark",
+            "row_content": "<p></p><p>Your tracking number will be sent by email once your order ships. You can track your package on our <a href=\"https://serivarm.com/apps/track-order\" title=\"https://serivarm.com/apps/track-order\">Track Order</a> page.</p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_NHNgn8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does shipping take?",
+            "icon": "check_mark",
+            "row_content": "<p></p><p>Orders are processed within <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_processing.value }}</strong>. After shipment, delivery typically takes <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_transit.value }}</strong> within the United States. In total, most orders arrive within <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].shipping_total.value }}</strong>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CFbnfU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I start a return?",
+            "icon": "check_mark",
+            "row_content": "<p><br/>Simply contact our support team with your order number. We'll guide you through the return process. Email:<a href=\"mailto:support@serivarm.com\">support@serivarm.com</a>.</p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_N9wLNc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "icon": "check_mark",
+            "row_content": "<p><br/>You may request a return within <strong>{{ metaobjects.shipping_and_returns[\"shipping-and-returns-brpnpwnf\"].return.value }}</strong> of receiving your order, provided the item meets our return requirements. <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">refund-policy</a></p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_VXpL3n": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you ship across the United States?",
+            "icon": "check_mark",
+            "row_content": "<p><br/>Yes. We currently ship throughout the United States.</p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_iFgnnV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Who pays for return shipping?",
+            "icon": "check_mark",
+            "row_content": "<p><br/>If the return is due to a product defect or an order error, we'll make it right. For other returns, return shipping may be the customer's responsibility.</p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_btzCgC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if my order arrives damaged?",
+            "icon": "check_mark",
+            "row_content": "<p><br/>Please contact us as soon as possible and include photos of the item and packaging. We'll work with you to resolve the issue quickly.</p><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ry7dHJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I contact support?",
+            "icon": "check_mark",
+            "row_content": "<p><br/>If you have any questions about your order, shipping, or returns, contact us anytime. We're happy to help.  Email:<a href=\"mailto:support@serivarm.com\">support@serivarm.com</a>.</p><p></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_HddbNf",
+        "collapsible_row_NHNgn8",
+        "collapsible_row_CFbnfU",
+        "collapsible_row_N9wLNc",
+        "collapsible_row_VXpL3n",
+        "collapsible_row_iFgnnV",
+        "collapsible_row_btzCgC",
+        "collapsible_row_ry7dHJ"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
+        "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 60,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_wEQ97P": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AzqMMb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Have questions?",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AzqMMb"
+      ],
+      "name": "Still have questions?",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "contact_form_MdWVHR": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Contact our support team anytime.",
+        "heading_size": "h2",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "1782812336b502883f": {
+      "type": "_blocks",
+      "disabled": true,
+      "settings": {}
+    },
+    "178281252013781b85": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_69d1d50_UWQLdK": {
+          "type": "ai_gen_block_69d1d50",
+          "settings": {
+            "title": "配送时间线",
+            "title_size": 20,
+            "title_color": "#121212",
+            "text_alignment": "left",
+            "step_1_title": "处理中",
+            "step_1_description": "1–2 个工作日",
+            "step_2_title": "配送中",
+            "step_2_description": "5–10 个工作日",
+            "step_3_title": "已送达",
+            "step_3_description": "享受您的 Serivarm",
+            "card_background": "#ffffff",
+            "card_border_radius": 8,
+            "card_padding": 32,
+            "desktop_width_percent": 100,
+            "icon_size": 48,
+            "icon_background": "#121212",
+            "icon_color": "#ffffff",
+            "connector_color": "#e0e0e0",
+            "icon_text_gap": 16,
+            "step_title_size": 16,
+            "step_title_color": "#121212",
+            "step_description_size": 14,
+            "step_description_color": "#666666",
+            "spacing_between_items": 32
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_69d1d50_UWQLdK"
+      ],
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_wrM4zF",
+    "rich_text_AkL7GL",
+    "multicolumn_hgKWQp",
+    "rich_text_VriNmy",
+    "multicolumn_Y7ApYn",
+    "multicolumn_pTDW6f",
+    "rich_text_hjqr4c",
+    "multicolumn_Tey8bM",
+    "collapsible_content_dEazHG",
+    "rich_text_wEQ97P",
+    "contact_form_MdWVHR",
+    "1782812336b502883f",
+    "178281252013781b85"
+  ]
 }
