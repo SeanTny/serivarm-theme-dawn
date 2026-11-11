@@ -1,276 +1,285 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "main": {
-            "type": "main-page",
-            "disabled": true,
-            "settings": {
-                "padding_top": 28,
-                "padding_bottom": 28
-            }
-        },
-        "image_banner_yPdgiT": {
-            "type": "image-banner",
-            "blocks": {
-                "heading_GrnLnd": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "&nbsp;Practical products for everyday problems",
-                        "heading_size": "h1"
-                    }
-                },
-                "text_EqqEMW": {
-                    "type": "text",
-                    "settings": {
-                        "text": "&nbsp;We look for simple, useful solutions to everyday problems.&nbsp;",
-                        "text_style": "subtitle"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_GrnLnd",
-                "text_EqqEMW"
-            ],
-            "settings": {
-                "image": "shopify:\/\/shop_images\/page-hero-background-soft-white.jpg",
-                "image_overlay_opacity": 10,
-                "image_height": "small",
-                "image_behavior": "none",
-                "desktop_content_position": "middle-center",
-                "desktop_content_alignment": "center",
-                "show_text_box": false,
-                "color_scheme": "scheme-2",
-                "stack_images_on_mobile": true,
-                "mobile_content_alignment": "center",
-                "show_text_below": false
-            }
-        },
-        "rich_text_AdVcGj": {
-            "type": "rich-text",
-            "blocks": {
-                "text_Vp6PPT": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<h1>Useful starts with the problem&nbsp;<\/h1>"
-                    }
-                },
-                "text_TMadct": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p><strong>We look for everyday problems worth solving—whether that means carrying essentials more comfortably, keeping a space organized, or making a routine less complicated. Our standard is simple: the product should be useful, straightforward, and made for regular use.<br\/><br\/><\/strong><\/p>"
-                    }
-                }
-            },
-            "block_order": [
-                "text_Vp6PPT",
-                "text_TMadct"
-            ],
-            "name": "t:sections.rich-text.presets.name",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "scheme-1",
-                "full_width": false,
-                "padding_top": 72,
-                "padding_bottom": 80
-            }
-        },
-        "rich_text_ApEmzj": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_bkYrVt": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "Product Selection Criteria",
-                        "heading_size": "h1"
-                    }
-                },
-                "text_VqtX6r": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p><br\/>Every product has to earn its place.<\/p>"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_bkYrVt",
-                "text_VqtX6r"
-            ],
-            "name": "t:sections.rich-text.presets.name",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "scheme-2",
-                "full_width": true,
-                "padding_top": 60,
-                "padding_bottom": 12
-            }
-        },
-        "multicolumn_CCeyjK": {
-            "type": "multicolumn",
-            "blocks": {
-                "column_g9mdJw": {
-                    "type": "column",
-                    "settings": {
-                        "title": "&nbsp;Solves a real need&nbsp;",
-                        "text": "<p><br\/>Products should make a common task easier, clearer, or more comfortable.<br\/><br\/><\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_E6AzxH": {
-                    "type": "column",
-                    "settings": {
-                        "title": "&nbsp;Simple to live with&nbsp;",
-                        "text": "<p><br\/>&nbsp;Clear function, intuitive use, and no unnecessary complexity.<br\/><br\/><\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                },
-                "column_ygqAag": {
-                    "type": "column",
-                    "settings": {
-                        "title": "&nbsp;Built for use&nbsp;",
-                        "text": "<p><br\/>Practical materials and details that hold up to regular routines.<br\/><br\/><\/p>",
-                        "link_label": "",
-                        "link": ""
-                    }
-                }
-            },
-            "block_order": [
-                "column_g9mdJw",
-                "column_E6AzxH",
-                "column_ygqAag"
-            ],
-            "name": "t:sections.multicolumn.presets.name",
-            "settings": {
-                "title": "",
-                "heading_size": "h1",
-                "image_width": "full",
-                "image_ratio": "adapt",
-                "button_label": "",
-                "button_link": "",
-                "columns_desktop": 3,
-                "column_alignment": "center",
-                "background_style": "primary",
-                "color_scheme": "scheme-2",
-                "columns_mobile": "1",
-                "swipe_on_mobile": false,
-                "padding_top": 36,
-                "padding_bottom": 80
-            }
-        },
-        "rich_text_mmDf8q": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_AXXPAH": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "&nbsp;Starting with everyday carry.&nbsp;",
-                        "heading_size": "h1"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_AXXPAH"
-            ],
-            "name": "t:sections.rich-text.presets.name",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "",
-                "full_width": true,
-                "padding_top": 100,
-                "padding_bottom": 20
-            }
-        },
-        "image_with_text_WjQiRi": {
-            "type": "image-with-text",
-            "blocks": {
-                "heading_Mp9aCV": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "",
-                        "heading_size": "h1"
-                    }
-                },
-                "text_wUkKmy": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p><br\/>We're starting with products that keep everyday essentials close, organized, and easy to reach. The same standards will guide everything we make available at Serivarm.<br\/><br\/><\/p>",
-                        "text_style": "body"
-                    }
-                },
-                "button_Am4zDR": {
-                    "type": "button",
-                    "settings": {
-                        "button_label": "Explore Products",
-                        "button_link": "shopify:\/\/collections\/all",
-                        "button_style_secondary": false
-                    }
-                }
-            },
-            "block_order": [
-                "heading_Mp9aCV",
-                "text_wUkKmy",
-                "button_Am4zDR"
-            ],
-            "name": "t:sections.image-with-text.presets.name",
-            "settings": {
-                "image": "shopify:\/\/shop_images\/product-flow-detail-capacity-10.avif",
-                "height": "medium",
-                "desktop_image_width": "medium",
-                "layout": "image_first",
-                "image_behavior": "none",
-                "content_layout": "no-overlap",
-                "desktop_content_position": "middle",
-                "desktop_content_alignment": "center",
-                "mobile_content_alignment": "center",
-                "section_color_scheme": "scheme-1",
-                "color_scheme": "scheme-1",
-                "padding_top": 20,
-                "padding_bottom": 80
-            }
-        },
-        "rich_text_xcfra8": {
-            "type": "rich-text",
-            "blocks": {
-                "heading_q6BipL": {
-                    "type": "heading",
-                    "settings": {
-                        "heading": "&nbsp;Useful by design. Simple by nature.&nbsp;",
-                        "heading_size": "h1"
-                    }
-                },
-                "text_trPgMP": {
-                    "type": "text",
-                    "settings": {
-                        "text": "<p><br\/>We believe good products don't need to be complicated.&nbsp;They should solve a real problem,&nbsp;work as expected, and make everyday life a little easier.<br\/><br\/><\/p>"
-                    }
-                }
-            },
-            "block_order": [
-                "heading_q6BipL",
-                "text_trPgMP"
-            ],
-            "name": "t:sections.rich-text.presets.name",
-            "settings": {
-                "desktop_content_position": "center",
-                "content_alignment": "center",
-                "color_scheme": "scheme-2",
-                "full_width": true,
-                "padding_top": 100,
-                "padding_bottom": 100
-            }
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
     },
-    "order": [
-        "main",
-        "image_banner_yPdgiT",
-        "rich_text_AdVcGj",
-        "rich_text_ApEmzj",
-        "multicolumn_CCeyjK",
-        "rich_text_mmDf8q",
-        "image_with_text_WjQiRi",
-        "rich_text_xcfra8"
-    ]
+    "image_banner_yPdgiT": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_GrnLnd": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;Practical products for everyday problems",
+            "heading_size": "h1"
+          }
+        },
+        "text_EqqEMW": {
+          "type": "text",
+          "settings": {
+            "text": "&nbsp;We look for simple, useful solutions to everyday problems.&nbsp;",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GrnLnd",
+        "text_EqqEMW"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/page-hero-background-soft-white.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-2",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "rich_text_AdVcGj": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Vp6PPT": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Useful starts with the problem&nbsp;</h1>"
+          }
+        },
+        "text_TMadct": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>We look for everyday problems worth solving—whether that means carrying essentials more comfortably, keeping a space organized, or making a routine less complicated. Our standard is simple: the product should be useful, straightforward, and made for regular use.<br/><br/></strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Vp6PPT",
+        "text_TMadct"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_ApEmzj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bkYrVt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Product Selection Criteria",
+            "heading_size": "h1"
+          }
+        },
+        "text_VqtX6r": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Every product has to earn its place.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bkYrVt",
+        "text_VqtX6r"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_CCeyjK": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_g9mdJw": {
+          "type": "column",
+          "settings": {
+            "title": "&nbsp;Solves a real need&nbsp;",
+            "text": "<p><br/>Products should make a common task easier, clearer, or more comfortable.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_E6AzxH": {
+          "type": "column",
+          "settings": {
+            "title": "&nbsp;Simple to live with&nbsp;",
+            "text": "<p><br/>&nbsp;Clear function, intuitive use, and no unnecessary complexity.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ygqAag": {
+          "type": "column",
+          "settings": {
+            "title": "&nbsp;Built for use&nbsp;",
+            "text": "<p><br/>Practical materials and details that hold up to regular routines.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_g9mdJw",
+        "column_E6AzxH",
+        "column_ygqAag"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-d9c259c4-8a27-45a3-9663-f7f54bc32307",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    },
+    "rich_text_mmDf8q": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AXXPAH": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;Starting with everyday carry.&nbsp;",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AXXPAH"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 20
+      }
+    },
+    "image_with_text_WjQiRi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Mp9aCV": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_wUkKmy": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>We're starting with products that keep everyday essentials close, organized, and easy to reach. The same standards will guide everything we make available at Serivarm.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_Am4zDR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Products",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Mp9aCV",
+        "text_wUkKmy",
+        "button_Am4zDR"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/product-flow-detail-capacity-10.avif",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_xcfra8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_q6BipL": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;Useful by design. Simple by nature.&nbsp;",
+            "heading_size": "h1"
+          }
+        },
+        "text_trPgMP": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>We believe good products don't need to be complicated.&nbsp;They should solve a real problem,&nbsp;work as expected, and make everyday life a little easier.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_q6BipL",
+        "text_trPgMP"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_yPdgiT",
+    "rich_text_AdVcGj",
+    "rich_text_ApEmzj",
+    "multicolumn_CCeyjK",
+    "rich_text_mmDf8q",
+    "image_with_text_WjQiRi",
+    "rich_text_xcfra8"
+  ]
 }
