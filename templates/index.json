@@ -15,15 +15,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "&nbsp;Thoughtful Gear for Everyday Carry.&nbsp;",
+            "heading": "&nbsp;Tactile Gear & Everyday Carry.&nbsp;",
             "heading_size": "h2"
           }
         },
         "text_MUVagi": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "&nbsp;Simple solutions to make life better.&nbsp;",
+            "text": "&nbsp;Curated hardware and functional carry built for daily obsession.&nbsp;",
             "text_style": "body"
           }
         },
