@@ -1,3 +1,7 @@
+
+V1.1.16
+    1、这是sling bag的最后一版，接下来我准备将用它来切换到Contain the Chaos
+
 V1.1.14
     1、使用暗色系的页眉和页脚
     2、完善了product-comm的公共模块
