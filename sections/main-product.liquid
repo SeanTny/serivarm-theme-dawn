@@ -297,6 +297,7 @@
                         <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                           {{ block.settings.content }}
                           {{ block.settings.page.content }}
+                          {{ block.settings.custom_liquid }}
                           {%- if block.settings.image != blank -%}
                             {{
                               block.settings.image
@@ -1365,6 +1366,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.image.label"
+        },
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "Liquid 代码"
         }
       ]
     },
